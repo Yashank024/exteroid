@@ -1,0 +1,43 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f3f4f6;
+}
+
+.drag-area {
+    border: 2px dashed #cbd5e1;
+    transition: all 0.3s ease;
+}
+
+.drag-area.active {
+    border-color: #3b82f6;
+    background-color: #eff6ff;
+}
+
+/* Toggle Switch CSS */
+.toggle-checkbox:checked {
+    right: 0;
+    border-color: #68D391;
+}
+
+.toggle-checkbox:checked+.toggle-label {
+    background-color: #68D391;
+}
+
+.spinner {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3b82f6;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

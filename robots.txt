@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dataopspro.com/sitemap.xml

@@ -1,0 +1,237 @@
+/* Excel Consolidator Styles */
+
+.drop-zone {
+    transition: all 0.3s ease;
+}
+
+.drop-zone.active {
+    border-color: #10b981;
+    background-color: #ecfdf5;
+}
+
+.drop-zone:hover {
+    border-color: #059669;
+    background-color: #d1fae5;
+}
+
+/* File Card Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.file-card {
+    animation: slideIn 0.3s ease-out;
+}
+
+/* Processing Animation */
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.processing {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Statistics Cards */
+.stat-card {
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Toggle Switch */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #cbd5e1;
+    transition: 0.3s;
+    border-radius: 24px;
+}
+
+.toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+
+input:checked+.toggle-slider {
+    background-color: #10b981;
+}
+
+input:checked+.toggle-slider:before {
+    transform: translateX(24px);
+}
+
+/* Column Mapping */
+.column-mapper {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.column-row {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.75rem;
+    background: white;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+.column-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: #e0e7ff;
+    color: #4f46e5;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.arrow-icon {
+    color: #9ca3af;
+}
+
+/* Table Styling */
+.data-table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.data-table thead th {
+    position: sticky;
+    top: 0;
+    background: #f3f4f6;
+    z-index: 10;
+}
+
+.data-table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+.duplicate-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    background: #fee2e2;
+    color: #dc2626;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.empty-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    background: #fef3c7;
+    color: #d97706;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Progress Bar */
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    background: #e5e7eb;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #10b981, #059669);
+    transition: width 0.3s ease;
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+/* Scrollbar Styling */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .column-row {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .arrow-icon {
+        transform: rotate(90deg);
+    }
+}
