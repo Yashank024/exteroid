@@ -1,0 +1,250 @@
+/* ===== About Page - Premium SaaS Design ===== */
+
+/* Inherits CSS variables from styles.css */
+/* Uses same design system as index.html */
+
+/* ===== Page Layout ===== */
+body {
+    background: var(--white);
+    min-height: 100vh;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}
+
+/* ===== Hero Section ===== */
+.about-hero {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f0f9ff 100%);
+    padding: 5rem var(--spacing-lg) 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(30, 64, 175, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--charcoal);
+    margin-bottom: var(--spacing-sm);
+    position: relative;
+    z-index: 1;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    color: var(--mid-gray);
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== Content Sections ===== */
+.about-content {
+    padding: var(--spacing-2xl) 0;
+}
+
+.content-section {
+    background: var(--white);
+    border-radius: 20px;
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-gray);
+}
+
+.section-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-primary);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.section-icon i {
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--charcoal);
+    margin-bottom: var(--spacing-md);
+}
+
+.content-section p {
+    font-size: 1rem;
+    color: var(--mid-gray);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-sm);
+}
+
+/* ===== User Personas Grid ===== */
+.personas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.persona-card {
+    background: var(--white);
+    border: 2px solid var(--border-gray);
+    border-radius: 15px;
+    padding: var(--spacing-xl);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.persona-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--deep-blue);
+}
+
+.persona-card i {
+    font-size: 2.5rem;
+    color: var(--deep-blue);
+    margin-bottom: var(--spacing-md);
+}
+
+.persona-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--charcoal);
+    margin-bottom: var(--spacing-sm);
+}
+
+.persona-card p {
+    font-size: 0.95rem;
+    color: var(--mid-gray);
+}
+
+/* ===== Privacy First Section ===== */
+.privacy-highlight {
+    background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+    border: 2px solid var(--emerald-green);
+    border-radius: 20px;
+    padding: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+}
+
+.privacy-highlight h2 {
+    color: var(--emerald-green);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.privacy-highlight h2 i {
+    font-size: 1.5rem;
+}
+
+.privacy-highlight p {
+    color: #065f46;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* ===== Trust Strip ===== */
+.trust-strip {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-xl);
+    flex-wrap: wrap;
+    padding: var(--spacing-xl) 0;
+    margin-top: var(--spacing-xl);
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--charcoal);
+    font-weight: 600;
+}
+
+.trust-item i {
+    color: var(--emerald-green);
+    font-size: 1.2rem;
+}
+
+/* ===== Ad Spaces ===== */
+.ad-space {
+    background: var(--light-gray);
+    border: 2px dashed var(--border-gray);
+    border-radius: 10px;
+    padding: var(--spacing-lg);
+    text-align: center;
+    margin: var(--spacing-xl) auto;
+    max-width: 1200px;
+}
+
+.ad-space.banner {
+    max-width: 728px;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ad-placeholder {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .about-hero p {
+        font-size: 1rem;
+    }
+
+    .content-section {
+        padding: var(--spacing-lg);
+    }
+
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .personas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trust-strip {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero {
+        padding: 3rem var(--spacing-md) 2.5rem;
+    }
+
+    .about-hero h1 {
+        font-size: 1.8rem;
+    }
+}

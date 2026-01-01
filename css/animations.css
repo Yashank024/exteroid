@@ -1,0 +1,690 @@
+/* ===== Professional Animations for DataOps Pro ===== */
+/* Mobile-Responsive | Performance-Optimized | Accessibility-First */
+
+/* ===== Core Keyframe Animations ===== */
+
+/* Fade In Up - Element slides up while fading in */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade In Scale - Element scales up while fading in */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Fade In - Simple fade in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide In Left - Element slides in from left */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Slide In Right - Element slides in from right */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Slide In Up - Element slides up from bottom */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Pop In - Element pops in with overshoot */
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Bounce In - Element bounces in */
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    70% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Bounce - Bouncing effect */
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Pulse - Subtle pulsing effect */
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.03);
+        opacity: 0.9;
+    }
+}
+
+/* Pulse Glow - Pulsing with glow effect */
+@keyframes pulseGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 35px rgba(16, 185, 129, 0.5);
+    }
+}
+
+/* Spin - 360 degree rotation */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Float - Gentle floating motion */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Wiggle - Subtle wiggle */
+@keyframes wiggle {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-3deg);
+    }
+
+    75% {
+        transform: rotate(3deg);
+    }
+}
+
+/* ===== Page-Specific Animation Classes ===== */
+
+/* INDEX.HTML Animations */
+
+/* Hero Content */
+.hero-content {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Feature Sections - Staggered */
+.feature-section {
+    opacity: 0;
+    animation: fadeInUp 0.7s ease-out forwards;
+}
+
+.feature-section:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.feature-section:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.feature-section:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+/* Visual Cards - Sequential Pop In */
+.visual-card {
+    opacity: 0;
+    animation: popIn 0.5s ease-out forwards;
+}
+
+.visual-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.visual-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.visual-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.visual-card:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.visual-card:nth-child(5) {
+    animation-delay: 1s;
+}
+
+/* Trust Cards Grid */
+.trust-card {
+    opacity: 0;
+    animation: fadeInScale 0.6s ease-out forwards;
+}
+
+.trust-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.trust-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.trust-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.trust-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.trust-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.trust-card:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+/* Automation Grid Cards */
+.auto-card {
+    opacity: 0;
+    animation: popIn 0.4s ease-out forwards;
+}
+
+.automation-grid .auto-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.automation-grid .auto-card:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.automation-grid .auto-card:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.automation-grid .auto-card:nth-child(4) {
+    animation-delay: 0.25s;
+}
+
+.automation-grid .auto-card:nth-child(5) {
+    animation-delay: 0.3s;
+}
+
+.automation-grid .auto-card:nth-child(6) {
+    animation-delay: 0.35s;
+}
+
+/* ABOUT.HTML Animations */
+
+/* Hero Title and Subtitle */
+.about-hero h1 {
+    opacity: 0;
+    animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.about-hero p {
+    opacity: 0;
+    animation: slideInRight 0.8s ease-out 0.2s forwards;
+}
+
+/* Section Icons */
+.section-icon {
+    animation: bounceIn 0.7s ease-out;
+}
+
+/* Content Sections */
+.content-section {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Persona Cards */
+.persona-card {
+    opacity: 0;
+    animation: popIn 0.5s ease-out forwards;
+}
+
+.personas-grid .persona-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.personas-grid .persona-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.personas-grid .persona-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.personas-grid .persona-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.personas-grid .persona-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.personas-grid .persona-card:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+/* Privacy Highlight */
+.privacy-highlight {
+    opacity: 0;
+    animation: slideInUp 0.7s ease-out 0.5s forwards;
+}
+
+/* Trust Strip Items */
+.trust-item {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.trust-strip .trust-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.trust-strip .trust-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.trust-strip .trust-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.trust-strip .trust-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+/* PRIVACY.HTML Animations */
+
+/* Hero Elements */
+.privacy-hero h1 {
+    opacity: 0;
+    animation: fadeInScale 0.8s ease-out forwards;
+}
+
+.privacy-hero p {
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out 0.3s forwards;
+}
+
+.last-updated {
+    opacity: 0;
+    animation: slideInUp 0.5s ease-out 0.5s forwards;
+}
+
+/* Policy Intro */
+.policy-intro {
+    opacity: 0;
+    animation: slideInLeft 0.6s ease-out forwards;
+}
+
+/* Policy Sections */
+.policy-section {
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.policy-section:nth-of-type(1) {
+    animation-delay: 0.1s;
+}
+
+.policy-section:nth-of-type(2) {
+    animation-delay: 0.2s;
+}
+
+.policy-section:nth-of-type(3) {
+    animation-delay: 0.3s;
+}
+
+.policy-section:nth-of-type(4) {
+    animation-delay: 0.4s;
+}
+
+.policy-section:nth-of-type(5) {
+    animation-delay: 0.5s;
+}
+
+.policy-section:nth-of-type(6) {
+    animation-delay: 0.6s;
+}
+
+/* Privacy Guarantee Box */
+.privacy-guarantee {
+    animation: pulseGlow 3s ease-in-out infinite;
+}
+
+/* CONTACT.HTML Animations */
+
+/* Hero Elements */
+.contact-hero h1 {
+    opacity: 0;
+    animation: bounceIn 0.9s ease-out forwards;
+}
+
+.contact-hero p {
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out 0.3s forwards;
+}
+
+/* Contact Option Cards */
+.contact-option-card {
+    opacity: 0;
+    animation: popIn 0.5s ease-out forwards;
+}
+
+.contact-options .contact-option-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.contact-options .contact-option-card:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.contact-options .contact-option-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* Contact Form */
+.contact-form-section {
+    opacity: 0;
+    animation: slideInUp 0.7s ease-out 0.5s forwards;
+}
+
+/* ===== Hover Effects ===== */
+
+/* Card Hover - Lift Effect */
+.feature-section:hover,
+.content-section:hover,
+.trust-card:hover,
+.persona-card:hover,
+.contact-option-card:hover {
+    transform: translateY(-8px);
+    transition: all 0.3s ease;
+}
+
+/* Button Hover - Lift and Glow */
+.btn-primary:hover,
+.btn-feature:hover,
+.form-submit:hover {
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+
+/* Icon Hover - Bounce */
+.persona-card:hover i,
+.contact-option-card:hover i {
+    animation: bounce 0.6s ease;
+}
+
+/* Icon Hover - Spin (for specific icons) */
+.privacy-guarantee h3 i:hover,
+.section-icon:hover i {
+    animation: spin 0.6s ease-in-out;
+}
+
+/* Link Hover - Wiggle */
+.footer-links a:hover {
+    animation: wiggle 0.5s ease;
+}
+
+/* ===== Interactive Animations ===== */
+
+/* Form Input Focus */
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    animation: inputGlow 0.3s ease-out;
+}
+
+@keyframes inputGlow {
+    from {
+        box-shadow: 0 0 0 0 rgba(30, 64, 175, 0.4);
+    }
+
+    to {
+        box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.2);
+    }
+}
+
+/* Button Ripple Effect */
+.btn-primary,
+.btn-feature,
+.form-submit {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary::before,
+.btn-feature::before,
+.form-submit::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn-primary:hover::before,
+.btn-feature:hover::before,
+.form-submit:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* ===== Mobile Responsiveness ===== */
+
+/* Reduce Motion for Accessibility */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        animation-delay: 0s !important;
+    }
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+
+    /* Faster animations on mobile */
+    * {
+        animation-duration: 0.4s !important;
+    }
+
+    /* Reduce stagger delays */
+    .feature-section,
+    .trust-card,
+    .persona-card,
+    .policy-section,
+    .visual-card,
+    .auto-card,
+    .contact-option-card {
+        animation-delay: 0s !important;
+    }
+
+    /* Simpler hover effects on mobile (use active state) */
+    .trust-card:active,
+    .persona-card:active,
+    .contact-option-card:active {
+        transform: scale(0.97);
+        transition: transform 0.1s ease;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Minimal animations on very small screens */
+    * {
+        animation-duration: 0.2s !important;
+        animation-delay: 0s !important;
+    }
+
+    /* Disable complex animations */
+    .pulseGlow,
+    .privacy-guarantee {
+        animation: none !important;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) {
+
+    /* Remove hover-only effects on touch devices */
+    .btn-primary::before,
+    .btn-feature::before,
+    .form-submit::before {
+        display: none;
+    }
+
+    /* Use active states instead */
+    .btn-primary:active,
+    .btn-feature:active,
+    .form-submit:active {
+        transform: scale(0.95);
+        transition: transform 0.1s ease;
+    }
+}
+
+/* ===== Performance Optimizations ===== */
+
+/* Use will-change for frequently animated elements */
+.hero-content,
+.feature-section,
+.trust-card,
+.persona-card {
+    will-change: opacity, transform;
+}
+
+/* Remove will-change after animation completes */
+.hero-content,
+.feature-section,
+.trust-card,
+.persona-card {
+    animation-fill-mode: forwards;
+}
+
+/* Force hardware acceleration */
+.btn-primary,
+.btn-feature,
+.form-submit,
+.trust-card,
+.persona-card,
+.contact-option-card {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}

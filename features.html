@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Professional Excel automation tools. Extract data from images with OCR, consolidate multiple files, and automate data cleaning - all in your browser with 100% privacy.">
+    <meta name="keywords"
+        content="excel automation, image to excel, ocr, data extraction, excel consolidator, data cleaning, merge excel files, browser-based tools">
+    <meta name="author" content="EXTEROID">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://exteroid.pages.dev/">
+    <meta property="og:title" content="EXTEROID – Excel Automation, Image to Data & File Consolidation Tools">
+    <meta property="og:description"
+        content="Professional Excel automation tools. Extract data from images with OCR, consolidate multiple files, and automate data cleaning - all in your browser with 100% privacy.">
+    <meta property="og:image" content="https://exteroid.pages.dev/assets/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://exteroid.pages.dev/">
+    <meta property="twitter:title" content="EXTEROID – Excel Automation, Image to Data & File Consolidation Tools">
+    <meta property="twitter:description"
+        content="Professional Excel automation tools. Extract data from images with OCR, consolidate multiple files, and automate data cleaning - all in your browser with 100% privacy.">
+    <meta property="twitter:image" content="https://exteroid.pages.dev/assets/twitter-image.jpg">
+
+    <link rel="canonical" href="https://exteroid.pages.dev/">
+
+    <title>EXTEROID – Excel Automation, Image to Data & File Consolidation Tools</title>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7740739312709675"
+        crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Google Fonts: Orbitron for headers, Inter for body (Matching Index.html) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Import Map for Three.js -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://esm.sh/three@0.160.0"
+            }
+        }
+    </script>
+
+    <!-- Custom CSS - Isolated for Features Page -->
+    <link rel="stylesheet" href="css/features.css">
+</head>
+
+<body>
+    <!-- Three.js Galaxy Background Canvas -->
+    <canvas id="webgl-canvas"></canvas>
+
+    <!-- Content Layer (Above Canvas) -->
+    <div class="content-layer">
+
+        <!-- Navigation -->
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="EXTEROID Logo">
+                    <span>Exteroid</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="features_pages/smartexcel.html" class="nav-cta">Launch Tools</a>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Hero Section with Tool Buttons -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Powerful Excel Tools</h1>
+                <p class="hero-subtitle">
+                    Transform your data workflow with professional-grade Excel automation. Extract data from images,
+                    merge multiple files, and automate complex operations - all in your browser with complete privacy.
+                </p>
+
+                <!-- Quick Access Tool Buttons -->
+                <div class="hero-tools">
+                    <a href="features_pages/imgdoc.html" class="btn btn-tool">
+                        <i class="fas fa-image"></i>
+                        Image to Data
+                    </a>
+                    <a href="features_pages/consolidator.html" class="btn btn-tool">
+                        <i class="fas fa-table-columns"></i>
+                        Excel Consolidator
+                    </a>
+                    <a href="features_pages/smartexcel.html" class="btn btn-tool">
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                        Excel Automation
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ad Space - Top Banner -->
+        <div class="ad-space banner">
+            <div class="ad-placeholder"></div>
+        </div>
+
+        <!-- Tool Section 1: Image to Data -->
+        <section id="image-to-data" class="tool-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Image to Data Extraction</h2>
+                    <p>Transform screenshots and scanned documents into structured Excel data</p>
+                </div>
+
+                <div class="tool-content">
+                    <div class="tool-info">
+                        <div class="tool-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <h3>Extract Data from Images</h3>
+                        <p class="tool-description">
+                            Transform screenshots, photos, and scanned documents into structured Excel data with
+                            AI-powered OCR technology. Perfect for digitizing printed tables, receipts, and forms.
+                        </p>
+                        <ul class="tool-features">
+                            <li><i class="fas fa-check-circle"></i> AI-powered OCR detects tables and text automatically
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> Batch processing for multiple images at once</li>
+                            <li><i class="fas fa-check-circle"></i> Intelligent data cleaning and formatting</li>
+                            <li><i class="fas fa-check-circle"></i> Extract phone numbers, emails, and structured data
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> Export to Excel instantly with one click</li>
+                            <li><i class="fas fa-check-circle"></i> 100% browser-based - no uploads required</li>
+                        </ul>
+                        <a href="features_pages/imgdoc.html" class="btn btn-primary">
+                            <i class="fas fa-arrow-right"></i>
+                            Launch Image to Data Tool
+                        </a>
+                    </div>
+
+                    <div class="tool-visual">
+                        <div class="visual-card">
+                            <i class="fas fa-camera"></i>
+                            <p>Upload Image</p>
+                        </div>
+                        <div class="visual-arrow">→</div>
+                        <div class="visual-card">
+                            <i class="fas fa-brain"></i>
+                            <p>AI Processing</p>
+                        </div>
+                        <div class="visual-arrow">→</div>
+                        <div class="visual-card highlight">
+                            <i class="fas fa-file-excel"></i>
+                            <p>Excel Output</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ad Space - Middle Responsive -->
+        <div class="ad-space responsive">
+            <div class="ad-placeholder"></div>
+        </div>
+
+        <!-- Tool Section 2: Excel Consolidator -->
+        <section id="excel-consolidator" class="tool-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Excel File Consolidator</h2>
+                    <p>Merge multiple Excel files into one with intelligent mapping</p>
+                </div>
+
+                <div class="tool-content reverse">
+                    <div class="tool-visual">
+                        <div class="visual-card">
+                            <i class="fas fa-file"></i>
+                            <p>File 1</p>
+                        </div>
+                        <div class="visual-merge">
+                            <i class="fas fa-compress-arrows-alt"></i>
+                        </div>
+                        <div class="visual-card">
+                            <i class="fas fa-file"></i>
+                            <p>File 2</p>
+                        </div>
+                        <div class="visual-arrow">→</div>
+                        <div class="visual-card highlight">
+                            <i class="fas fa-file-excel"></i>
+                            <p>Merged File</p>
+                        </div>
+                    </div>
+
+                    <div class="tool-info">
+                        <div class="tool-icon">
+                            <i class="fas fa-table-columns"></i>
+                        </div>
+                        <h3>Merge Multiple Excel Files</h3>
+                        <p class="tool-description">
+                            Combine multiple Excel or CSV files into one with intelligent column mapping and duplicate
+                            detection. Perfect for consolidating data from multiple sources or team members.
+                        </p>
+                        <ul class="tool-features">
+                            <li><i class="fas fa-check-circle"></i> Auto-detect and map column headers intelligently
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> Remove duplicates automatically during merge</li>
+                            <li><i class="fas fa-check-circle"></i> Clean and trim data during consolidation</li>
+                            <li><i class="fas fa-check-circle"></i> Merge unlimited files at once</li>
+                            <li><i class="fas fa-check-circle"></i> Preview data before downloading final file</li>
+                            <li><i class="fas fa-check-circle"></i> Handle different formats (XLSX, CSV, XLS)</li>
+                        </ul>
+                        <a href="features_pages/consolidator.html" class="btn btn-primary">
+                            <i class="fas fa-arrow-right"></i>
+                            Launch Consolidator Tool
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tool Section 3: Excel Automation -->
+        <section id="excel-automation" class="tool-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Excel Automation Suite</h2>
+                    <p>Automate complex Excel operations without writing formulas or macros</p>
+                </div>
+
+                <div class="tool-content">
+                    <div class="tool-info">
+                        <div class="tool-icon">
+                            <i class="fas fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3>Automate Excel Operations</h3>
+                        <p class="tool-description">
+                            Clean, format, merge, and transform your Excel data without writing formulas or macros.
+                            Powerful automation tools that save hours of manual work with just a few clicks.
+                        </p>
+                        <ul class="tool-features">
+                            <li><i class="fas fa-check-circle"></i> 7+ data cleaning operations built-in</li>
+                            <li><i class="fas fa-check-circle"></i> No-code formula builder for complex tasks</li>
+                            <li><i class="fas fa-check-circle"></i> Merge or split columns with ease</li>
+                            <li><i class="fas fa-check-circle"></i> Smart column mapping and transformation</li>
+                            <li><i class="fas fa-check-circle"></i> Remove duplicates, blanks, and trim whitespace</li>
+                            <li><i class="fas fa-check-circle"></i> Process large files instantly (1M+ rows)</li>
+                        </ul>
+                        <a href="features_pages/smartexcel.html" class="btn btn-primary">
+                            <i class="fas fa-arrow-right"></i>
+                            Launch Automation Tool
+                        </a>
+                    </div>
+
+                    <div class="tool-visual">
+                        <div class="automation-grid">
+                            <div class="auto-card">
+                                <i class="fas fa-broom"></i>
+                                Clean
+                            </div>
+                            <div class="auto-card">
+                                <i class="fas fa-compress"></i>
+                                Merge
+                            </div>
+                            <div class="auto-card">
+                                <i class="fas fa-trash"></i>
+                                Remove
+                            </div>
+                            <div class="auto-card">
+                                <i class="fas fa-sort"></i>
+                                Sort
+                            </div>
+                            <div class="auto-card">
+                                <i class="fas fa-filter"></i>
+                                Filter
+                            </div>
+                            <div class="auto-card">
+                                <i class="fas fa-calculator"></i>
+                                Calculate
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ad Space - Bottom Banner -->
+        <div class="ad-space banner">
+            <div class="ad-placeholder"></div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="EXTEROID Logo">
+                        <span>Exteroid</span>
+                    </div>
+                    <p class="footer-tagline">Excel Power. Cosmic Scale.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Exteroid. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Three.js Galaxy Animation Script -->
+    <script type="module">
+        import * as THREE from 'three';
+
+        /**
+         * 🌌 EXTEROID FEATURES GALAXY ENGINE
+         * Small galaxy background for features page
+         */
+
+        // --- CONFIGURATION ---
+        const config = {
+            count: window.innerWidth < 768 ? 5000 : 12000, // Smaller than index page
+            size: 0.015,
+            radius: 4,
+            branches: 5,
+            spin: 1,
+            randomness: 0.3,
+            randomnessPower: 3,
+            insideColor: '#00f0ff', // Electric Cyan
+            outsideColor: '#7000ff', // Deep Violet
+            coreSize: 0.25,
+            coreColor: '#ffffff',
+            glowColor: '#00f0ff'
+        };
+
+        // --- SCENE SETUP ---
+        const canvas = document.querySelector('#webgl-canvas');
+        const scene = new THREE.Scene();
+        scene.fog = new THREE.FogExp2(0x020205, 0.04);
+        scene.background = new THREE.Color(0x020205);
+
+        // --- CAMERA ---
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100);
+        camera.position.set(0, 2.5, 5);
+        scene.add(camera);
+
+        // --- RENDERER ---
+        const renderer = new THREE.WebGLRenderer({
+            canvas: canvas,
+            antialias: true,
+            powerPreference: 'high-performance',
+            alpha: false
+        });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+        // --- CORE SPHERE ---
+        const coreGroup = new THREE.Group();
+
+        const innerCore = new THREE.Mesh(
+            new THREE.SphereGeometry(config.coreSize, 32, 32),
+            new THREE.MeshBasicMaterial({ color: config.coreColor })
+        );
+        coreGroup.add(innerCore);
+
+        const midGlow = new THREE.Mesh(
+            new THREE.SphereGeometry(config.coreSize * 1.8, 32, 32),
+            new THREE.MeshBasicMaterial({
+                color: config.glowColor,
+                transparent: true,
+                opacity: 0.4,
+                blending: THREE.AdditiveBlending,
+                side: THREE.BackSide,
+                depthWrite: false
+            })
+        );
+        coreGroup.add(midGlow);
+
+        const outerGlow = new THREE.Mesh(
+            new THREE.SphereGeometry(config.coreSize * 3, 32, 32),
+            new THREE.MeshBasicMaterial({
+                color: config.outsideColor,
+                transparent: true,
+                opacity: 0.1,
+                blending: THREE.AdditiveBlending,
+                side: THREE.BackSide,
+                depthWrite: false
+            })
+        );
+        coreGroup.add(outerGlow);
+
+        scene.add(coreGroup);
+
+        const light = new THREE.PointLight(config.insideColor, 2, 10);
+        coreGroup.add(light);
+
+        // --- GALAXY GENERATION ---
+        let geometry = null;
+        let material = null;
+        let points = null;
+
+        const generateGalaxy = () => {
+            if (points !== null) {
+                geometry.dispose();
+                material.dispose();
+                scene.remove(points);
+            }
+
+            geometry = new THREE.BufferGeometry();
+            const positions = new Float32Array(config.count * 3);
+            const colors = new Float32Array(config.count * 3);
+
+            const colorInside = new THREE.Color(config.insideColor);
+            const colorOutside = new THREE.Color(config.outsideColor);
+
+            for (let i = 0; i < config.count; i++) {
+                const i3 = i * 3;
+                const radius = Math.random() * config.radius;
+                const spinAngle = radius * config.spin;
+                const branchAngle = (i % config.branches) / config.branches * Math.PI * 2;
+
+                const randomX = Math.pow(Math.random(), config.randomnessPower) * (Math.random() < 0.5 ? 1 : -1) * config.randomness * radius;
+                const randomY = Math.pow(Math.random(), config.randomnessPower) * (Math.random() < 0.5 ? 1 : -1) * config.randomness * radius * 0.5;
+                const randomZ = Math.pow(Math.random(), config.randomnessPower) * (Math.random() < 0.5 ? 1 : -1) * config.randomness * radius;
+
+                positions[i3] = Math.cos(branchAngle + spinAngle) * radius + randomX;
+                positions[i3 + 1] = randomY;
+                positions[i3 + 2] = Math.sin(branchAngle + spinAngle) * radius + randomZ;
+
+                const mixedColor = colorInside.clone();
+                mixedColor.lerp(colorOutside, radius / config.radius);
+
+                colors[i3] = mixedColor.r;
+                colors[i3 + 1] = mixedColor.g;
+                colors[i3 + 2] = mixedColor.b;
+            }
+
+            geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+            geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+
+            material = new THREE.PointsMaterial({
+                size: config.size,
+                sizeAttenuation: true,
+                depthWrite: false,
+                blending: THREE.AdditiveBlending,
+                vertexColors: true
+            });
+
+            points = new THREE.Points(geometry, material);
+            scene.add(points);
+        };
+
+        generateGalaxy();
+
+        // --- INTERACTION ---
+        const cursor = { x: 0, y: 0 };
+
+        window.addEventListener('mousemove', (event) => {
+            cursor.x = event.clientX / window.innerWidth - 0.5;
+            cursor.y = event.clientY / window.innerHeight - 0.5;
+        });
+
+        // --- ANIMATION LOOP ---
+        const clock = new THREE.Clock();
+
+        const tick = () => {
+            const elapsedTime = clock.getElapsedTime();
+
+            // Galaxy rotation
+            points.rotation.y = elapsedTime * 0.04;
+
+            // Core breathing
+            const pulse = 1 + Math.sin(elapsedTime * 1.5) * 0.05;
+            coreGroup.scale.set(pulse, pulse, pulse);
+
+            // Parallax camera
+            const parallaxX = cursor.x * 0.4;
+            const parallaxY = cursor.y * 0.4;
+
+            camera.position.x += (parallaxX - camera.position.x) * 0.03;
+            camera.position.y += (2.5 + parallaxY - camera.position.y) * 0.03;
+            camera.lookAt(0, 0, 0);
+
+            renderer.render(scene, camera);
+            window.requestAnimationFrame(tick);
+        };
+
+        tick();
+
+        // --- RESIZE ---
+        window.addEventListener('resize', () => {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+
+            camera.aspect = width / height;
+            camera.updateProjectionMatrix();
+
+            renderer.setSize(width, height);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+            if (width < 768 && config.count !== 5000) {
+                config.count = 5000;
+                generateGalaxy();
+            } else if (width >= 768 && config.count !== 12000) {
+                config.count = 12000;
+                generateGalaxy();
+            }
+        });
+    </script>
+
+    <!-- Custom JavaScript - Isolated for Features Page -->
+    <script src="js/features.js"></script>
+    <!-- Audio Background -->
+    <audio id="universe-audio" loop style="display:none;">
+        <source src="images/sound%20of%20the%20universe.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        (function () {
+            var audio = document.getElementById('universe-audio');
+            if (audio) {
+                audio.volume = 1.0;
+                var playAudio = function () {
+                    audio.play().catch(function (e) {
+                        console.log("Autoplay prevented:", e);
+                        document.addEventListener('click', function () {
+                            audio.play();
+                        }, { once: true });
+                    });
+                };
+                playAudio();
+            }
+        })();
+    </script>
+</body>
+
+</html>
