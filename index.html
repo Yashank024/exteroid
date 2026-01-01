@@ -5,16 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EXTEROID | Cosmic Scale Excel Automation</title>
+    <meta name="description"
+        content="Professional Excel automation tools powered by precision, speed, and browser-based intelligence.">
 
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7740739312709675"
         crossorigin="anonymous"></script>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/logo.png">
-    
-    <meta name="description"
-        content="Professional Excel automation tools powered by precision, speed, and browser-based intelligence.">
 
     <!-- Google Fonts: Orbitron for headers, Inter for body -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -160,6 +156,7 @@
             text-transform: uppercase;
             /* Gradient Text */
             background: linear-gradient(180deg, #ffffff 0%, #b0c4ff 100%);
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             filter: drop-shadow(0 0 30px rgba(112, 0, 255, 0.3));
@@ -240,31 +237,130 @@
 
         /* Mobile Adjustments */
         @media (max-width: 768px) {
+
+            /* Navigation */
             .nav-bar {
-                padding: 1.5rem;
+                padding: 1rem 1.5rem;
+                flex-wrap: wrap;
+            }
+
+            .nav-logo {
+                font-size: 1.2rem;
+                letter-spacing: 0.08em;
             }
 
             .nav-links {
                 display: none;
             }
 
-            /* Simplify for mobile */
+            /* Hero Container */
+            .hero-container {
+                margin-top: -5vh;
+                padding: 0 1.5rem;
+            }
+
+            /* Heading - Better size for mobile */
+            h1 {
+                font-size: clamp(2rem, 10vw, 3.5rem);
+                line-height: 1.1;
+                margin-bottom: 1rem;
+                letter-spacing: -0.01em;
+            }
+
+            /* Subheading - Improved readability */
+            p.subheading {
+                font-size: clamp(0.9rem, 4vw, 1.1rem);
+                margin-bottom: 2rem;
+                line-height: 1.5;
+                max-width: 100%;
+            }
+
+            /* Button Group */
             .btn-group {
                 flex-direction: column;
                 width: 100%;
-                max-width: 300px;
+                max-width: 280px;
+                gap: 1rem;
             }
 
+            /* Buttons */
             .btn {
                 width: 100%;
                 text-align: center;
+                padding: 0.9rem 2rem;
+                font-size: 0.85rem;
+                letter-spacing: 0.08em;
+            }
+
+            /* Footer */
+            .footer {
+                padding: 1.5rem 1rem;
+                font-size: 0.75rem;
+            }
+        }
+
+        /* Extra small devices (phones in portrait, less than 576px) */
+        @media (max-width: 576px) {
+            .nav-bar {
+                padding: 0.8rem 1rem;
+            }
+
+            .nav-logo {
+                font-size: 1rem;
             }
 
             .hero-container {
-                margin-top: -10vh;
+                margin-top: -3vh;
+                padding: 0 1rem;
             }
 
-            /* Pull up more on mobile */
+            h1 {
+                font-size: clamp(1.8rem, 11vw, 2.5rem);
+                margin-bottom: 0.8rem;
+            }
+
+            p.subheading {
+                font-size: clamp(0.85rem, 4.5vw, 1rem);
+                margin-bottom: 1.5rem;
+                line-height: 1.4;
+            }
+
+            .btn-group {
+                max-width: 100%;
+                gap: 0.8rem;
+            }
+
+            .btn {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.8rem;
+            }
+
+            .footer {
+                padding: 1.2rem 0.8rem;
+                font-size: 0.7rem;
+            }
+        }
+
+        /* Landscape orientation for mobile */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .hero-container {
+                margin-top: 0;
+            }
+
+            h1 {
+                font-size: clamp(1.5rem, 6vw, 2.5rem);
+            }
+
+            p.subheading {
+                font-size: clamp(0.8rem, 2vw, 1rem);
+                margin-bottom: 1.5rem;
+            }
+
+            .btn-group {
+                flex-direction: row;
+                max-width: 500px;
+                gap: 1rem;
+            }
         }
     </style>
 </head>
@@ -577,6 +673,4 @@
     </script>
 </body>
 
-
 </html>
-
