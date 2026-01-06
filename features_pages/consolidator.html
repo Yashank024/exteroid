@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Excel File Consolidation – EXTEROID</title>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7740739312709675"
+        crossorigin="anonymous"></script>
+
+    <meta name="description"
+        content="Consolidate 2-5 Excel files with intelligent column detection, smart data cleaning, and mobile number formatting. Premium browser-based tool by EXTEROID.">
+    <meta name="keywords"
+        content="excel consolidation, merge excel files, excel consolidator, data cleaning, EXTEROID tools, combine excel">
+    <meta name="author" content="EXTEROID">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://exteroid.pages.dev/features_pages/consolidator.html">
+    <meta property="og:title" content="Excel File Consolidation | EXTEROID">
+    <meta property="og:description"
+        content="Consolidate 2-5 Excel files with intelligent column detection, smart data cleaning, and mobile number formatting.">
+    <meta property="og:image" content="https://exteroid.pages.dev/assets/og-consolidator.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://exteroid.pages.dev/features_pages/consolidator.html">
+    <meta property="twitter:title" content="Excel File Consolidation | EXTEROID">
+    <meta property="twitter:description"
+        content="Consolidate 2-5 Excel files with intelligent column detection and smart data cleaning.">
+    <meta property="twitter:image" content="https://exteroid.pages.dev/assets/twitter-consolidator.jpg">
+
+    <link rel="canonical" href="https://exteroid.pages.dev/features_pages/consolidator.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/logo.png">
+
+    <!-- SheetJS for Excel Processing -->
+    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/consolidator.css">
+</head>
+
+<body class="cosmic-bg">
+
+    <!-- Navigation -->
+    <nav class="cosmic-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="EXTEROID Logo">
+                <span>EXTEROID</span>
+            </div>
+            <a href="../index.html" class="back-home">
+                <i class="fas fa-home"></i>
+                <span>Back to Home</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Layout: 3 Columns (Left Ad, Content, Right Ad) -->
+    <div class="main-layout">
+
+        <!-- Left Ad Column -->
+        <aside class="ad-column ad-column-left">
+            <div class="ad-placeholder">
+                <!-- AdSense placeholder -->
+            </div>
+        </aside>
+
+        <!-- Center Content Panel -->
+        <main class="content-panel">
+
+            <!-- Page Header -->
+            <header class="page-header">
+                <h1>
+                    <i class="fas fa-table-columns"></i>
+                    Excel File Consolidation
+                </h1>
+                <p class="subtitle">Merge 2-5 Excel files intelligently with auto-column detection and smart data
+                    cleaning</p>
+            </header>
+
+            <!-- Progress Indicator -->
+            <div class="progress-steps">
+                <div class="step active" data-step="1">
+                    <span class="step-number">1</span>
+                    <span class="step-label">Upload Files</span>
+                </div>
+                <div class="step" data-step="2">
+                    <span class="step-number">2</span>
+                    <span class="step-label">Select Columns</span>
+                </div>
+                <div class="step" data-step="3">
+                    <span class="step-number">3</span>
+                    <span class="step-label">Preview Data</span>
+                </div>
+                <div class="step" data-step="4">
+                    <span class="step-number">4</span>
+                    <span class="step-label">Clean Data</span>
+                </div>
+                <div class="step" data-step="5">
+                    <span class="step-number">5</span>
+                    <span class="step-label">Export</span>
+                </div>
+            </div>
+
+            <!-- STEP 1: File Upload -->
+            <section id="step-1-upload" class="step-section">
+                <div class="section-card">
+                    <div class="section-header">
+                        <div class="step-badge">Step 1</div>
+                        <h2>Upload Excel Files</h2>
+                    </div>
+                    <p class="helper-text">
+                        <i class="fas fa-info-circle"></i>
+                        Upload 2–5 Excel (.xlsx, .xls) or CSV files to consolidate
+                    </p>
+
+                    <!-- Single Multi-File Upload Area -->
+                    <div id="multi-drop-zone" class="multi-drop-zone">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p class="upload-title">Click or Drop Files Here</p>
+                        <p class="upload-subtitle">Upload 2-5 Excel or CSV files</p>
+                        <input type="file" id="file-input-multi" accept=".xlsx,.xls,.csv" multiple class="hidden-input">
+                        <button type="button" class="btn-upload" id="btn-browse">
+                            <i class="fas fa-folder-open"></i> Browse Files
+                        </button>
+                    </div>
+
+                    <!-- Uploaded Files Display -->
+                    <div id="uploaded-files-container" class="uploaded-files hidden">
+                        <h3>Uploaded Files (<span id="file-count">0</span>/5)</h3>
+                        <div id="file-list" class="file-list"></div>
+                    </div>
+
+                    <!-- Validation Message -->
+                    <div id="upload-validation" class="validation-message hidden"></div>
+                </div>
+            </section>
+
+            <!-- STEP 2: Column Selection -->
+            <section id="step-2-columns" class="step-section hidden">
+                <div class="section-card">
+                    <div class="section-header">
+                        <div class="step-badge">Step 2</div>
+                        <h2>Select Columns to Consolidate</h2>
+                    </div>
+                    <p class="helper-text">
+                        <i class="fas fa-info-circle"></i>
+                        Select which columns you want in the final consolidated file
+                    </p>
+
+                    <!-- Column Cards Grid -->
+                    <div id="column-cards-grid" class="column-cards-grid"></div>
+
+                    <!-- Action Buttons -->
+                    <div class="action-buttons">
+                        <button type="button" class="btn-secondary" id="btn-back-to-upload">
+                            <i class="fas fa-arrow-left"></i> Back
+                        </button>
+                        <button type="button" class="btn-primary" id="btn-extract-columns">
+                            Extract Selected Columns <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- STEP 3: Data Preview -->
+            <section id="step-3-preview" class="step-section hidden">
+                <div class="section-card">
+                    <div class="section-header">
+                        <div class="step-badge">Step 3</div>
+                        <h2>Data Preview</h2>
+                    </div>
+                    <p class="helper-text">
+                        <i class="fas fa-info-circle"></i>
+                        Showing preview of selected columns (first 20 rows)
+                    </p>
+
+                    <!-- Preview Table Container -->
+                    <div id="preview-table-container" class="preview-table-container"></div>
+
+                    <!-- Action Buttons -->
+                    <div class="action-buttons">
+                        <button type="button" class="btn-secondary" id="btn-back-to-columns">
+                            <i class="fas fa-arrow-left"></i> Back to Columns
+                        </button>
+                        <button type="button" class="btn-primary" id="btn-proceed-to-cleaning">
+                            Next: Data Cleaning <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- STEP 4: Data Cleaning Options -->
+            <section id="step-4-cleaning" class="step-section hidden">
+                <div class="section-card">
+                    <div class="section-header">
+                        <div class="step-badge">Step 4</div>
+                        <h2>Data Cleaning Options</h2>
+                    </div>
+                    <p class="helper-text">
+                        <i class="fas fa-info-circle"></i>
+                        Choose cleaning operations to apply before export
+                    </p>
+
+                    <!-- Cleaning Options Cards -->
+                    <div class="cleaning-options-grid">
+
+                        <!-- Option 1: Remove Empty Spaces -->
+                        <div class="cleaning-card">
+                            <div class="cleaning-icon">
+                                <i class="fas fa-eraser"></i>
+                            </div>
+                            <h3>Remove Empty Spaces</h3>
+                            <p class="cleaning-description">
+                                Trim leading/trailing spaces and normalize internal spacing
+                            </p>
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="clean-trim-spaces" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+
+                        <!-- Option 2: Remove Duplicates -->
+                        <div class="cleaning-card">
+                            <div class="cleaning-icon">
+                                <i class="fas fa-copy"></i>
+                            </div>
+                            <h3>Remove Duplicate Data</h3>
+                            <p class="cleaning-description">
+                                Row-level duplicate removal based on selected columns
+                            </p>
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="clean-remove-duplicates" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+
+                        <!-- Option 3: Smart Format -->
+                        <div class="cleaning-card">
+                            <div class="cleaning-icon">
+                                <i class="fas fa-magic"></i>
+                            </div>
+                            <h3>Format Data (Smart)</h3>
+                            <p class="cleaning-description">
+                                Auto-detect mobile numbers, normalize country codes (+91), remove invalid characters
+                            </p>
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="clean-smart-format" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="action-buttons">
+                        <button type="button" class="btn-secondary" id="btn-back-to-preview">
+                            <i class="fas fa-arrow-left"></i> Back
+                        </button>
+                        <button type="button" class="btn-primary" id="btn-process-data">
+                            <i class="fas fa-cogs"></i> Process & Download
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- STEP 5: Export -->
+            <section id="step-5-export" class="step-section hidden">
+                <div class="section-card">
+                    <div class="section-header">
+                        <div class="step-badge">Step 5</div>
+                        <h2>Download Results</h2>
+                    </div>
+
+                    <!-- Statistics -->
+                    <div id="stats-grid" class="stats-grid"></div>
+
+                    <!-- Final Preview -->
+                    <div class="final-preview">
+                        <h3>
+                            <i class="fas fa-table"></i>
+                            Final Data Preview (First 20 rows)
+                        </h3>
+                        <div id="final-preview-container" class="preview-table-container"></div>
+                    </div>
+
+                    <!-- Export Options -->
+                    <div class="export-options">
+                        <h3>Choose Export Format</h3>
+                        <div class="export-buttons">
+                            <button type="button" class="btn-export btn-excel" id="btn-export-excel">
+                                <i class="fas fa-file-excel"></i>
+                                Download as Excel (.xlsx)
+                            </button>
+                            <button type="button" class="btn-export btn-csv" id="btn-export-csv">
+                                <i class="fas fa-file-csv"></i>
+                                Download as CSV (.csv)
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Start Over -->
+                    <div class="action-buttons">
+                        <button type="button" class="btn-secondary" id="btn-start-over">
+                            <i class="fas fa-redo"></i> Start Over
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Right Ad Column -->
+        <aside class="ad-column ad-column-right">
+            <div class="ad-placeholder">
+                <!-- AdSense placeholder -->
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="loading-spinner">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p id="loading-text">Processing...</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="cosmic-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="../images/logo.png" alt="EXTEROID Logo">
+                    <span>EXTEROID</span>
+                </div>
+                <p class="footer-tagline">Excel Power. Cosmic Scale.</p>
+            </div>
+            <div class="footer-links">
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../privacy.html">Privacy</a>
+                <a href="../contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 EXTEROID. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="js/consolidator.js"></script>
+
+    <!-- Audio Background -->
+    <audio id="universe-audio" loop style="display:none;">
+        <source src="../images/sound%20of%20the%20universe.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        (function () {
+            var audio = document.getElementById('universe-audio');
+            if (audio) {
+                audio.volume = 1.0;
+                var playAudio = function () {
+                    audio.play().catch(function (e) {
+                        console.log("Autoplay prevented:", e);
+                        document.addEventListener('click', function () {
+                            audio.play();
+                        }, { once: true });
+                    });
+                };
+                playAudio();
+            }
+        })();
+    </script>
+</body>
+
+</html>
