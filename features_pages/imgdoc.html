@@ -5,43 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO Meta Tags -->
-    <title>Advanced Image to Data Extractor – AI-Powered OCR Tool | EXTEROID</title>
-
-    <!-- AdSense Script (REQUIRED) -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7740739312709675"
-        crossorigin="anonymous"></script>
-
+    <!-- Primary Meta Tags -->
+    <title>Image/PDF to Excel OCR Tool | Extract Data from Screenshots | EXTEROID</title>
+    <meta name="title" content="Image to Excel OCR Tool | Extract Data from Screenshots | EXTEROID">
     <meta name="description"
-        content="Extract any data from images with AI-powered OCR. Customize fields, clean data, and export to Excel/CSV. Unlimited images, 100% browser-based.">
+        content="Convert images and screenshots to Excel instantly with AI-powered OCR. Extract tables, emails, phone numbers automatically. 100% browser-based, private, and free.">
     <meta name="keywords"
-        content="OCR to Excel, image to data, extract data from images, AI OCR, custom field extraction, EXTEROID tools">
-    <meta name="author" content="EXTEROID">
+        content="image to excel, OCR excel, screenshot to excel, table extraction OCR, image data extraction, photo to excel">
     <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="author" content="EXTEROID">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://exteroid.pages.dev/features_pages/imgdoc.html">
-    <meta property="og:title" content="Advanced Image to Data Extractor | EXTEROID">
+    <meta property="og:url" content="https://exteroid.pages.dev/t/a92kq1">
+    <meta property="og:title" content="Image to Excel OCR Tool | EXTEROID">
     <meta property="og:description"
-        content="Extract any data from images with AI-powered OCR. Customize fields, clean data, and export to Excel/CSV.">
-    <meta property="og:image" content="https://exteroid.pages.dev/assets/og-imgdoc.jpg">
+        content="Convert images to Excel with AI-powered OCR. Extract tables, emails, and phone numbers automatically. Free and private.">
+    <meta property="og:image" content="https://exteroid.pages.dev/images/logo.png">
+    <meta property="og:site_name" content="EXTEROID">
 
-    <!-- Twitter -->
+    <!-- Twitter Card -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://exteroid.pages.dev/features_pages/imgdoc.html">
-    <meta property="twitter:title" content="Advanced Image to Data Extractor | EXTEROID">
+    <meta property="twitter:url" content="https://exteroid.pages.dev/t/a92kq1">
+    <meta property="twitter:title" content="Image to Excel OCR Tool | EXTEROID">
     <meta property="twitter:description"
-        content="Extract any data from images with AI-powered OCR. Customize fields, clean data, and export to Excel/CSV.">
-    <meta property="twitter:image" content="https://exteroid.pages.dev/assets/twitter-imgdoc.jpg">
+        content="AI-powered OCR for instant image-to-Excel conversion. Free, browser-based, completely private.">
+    <meta property="twitter:image" content="https://exteroid.pages.dev/images/logo.png">
 
-    <link rel="canonical" href="https://exteroid.pages.dev/features_pages/imgdoc.html">
+    <!-- Geo Targeting -->
+    <meta name="geo.region" content="IN" />
+    <meta name="geo.placename" content="India" />
+    <meta name="geo.position" content="28.6139;77.2090" />
+    <meta name="ICBM" content="28.6139, 77.2090" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../images/logo.png">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://exteroid.pages.dev/t/a92kq1">
+
+    <!-- Favicons & App Icons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/icons/android-chrome-192x192.png">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#6366f1">
 
     <!-- Tesseract.js for OCR -->
     <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.1.1/dist/tesseract.min.js"></script>
+
+    <!-- PDF.js for PDF Rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
+    <script>
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js';
+    </script>
 
     <!-- SheetJS for Excel Export -->
     <script src="https://cdn.sheetjs.com/xlsx-0.18.5/package/dist/xlsx.full.min.js"></script>
@@ -56,517 +74,191 @@
         rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="css/imgdoc.css">
+
+    <!-- JSON-LD Structured Data (WebApplication) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Image to Excel OCR Tool",
+      "description": "AI-powered OCR tool that converts images and screenshots to structured Excel data",
+      "url": "https://exteroid.pages.dev/t/a92kq1",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web Browser",
+      "browserRequirements": "Requires JavaScript. Works with Chrome, Firefox, Safari, Edge",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "featureList": [
+        "AI-powered table detection",
+        "Batch image processing",
+        "Email and phone extraction",
+        "100% browser-based processing",
+        "No uploads required"
+      ]
+    }
+    </script>
 </head>
 
-<body class="cosmic-bg">
+<body oncontextmenu="return false;">
+
+    <!-- Background Decoration (Matches Index) -->
+    <div class="hero-bg"></div>
+    <div class="shapes">
+        <div class="shape shape-indigo"></div>
+        <div class="shape shape-rose"></div>
+        <div class="shape shape-violet"></div>
+        <div class="shape shape-amber"></div>
+        <div class="shape shape-cyan"></div>
+    </div>
 
     <!-- Navigation -->
-    <nav class="cosmic-nav">
-        <div class="nav-container">
-            <div class="logo">
-                <img src="../images/logo.png" alt="EXTEROID Logo">
-                <span>EXTEROID</span>
-            </div>
-            <a href="../index.html" class="back-home">
-                <i class="fas fa-home"></i>
-                <span>Back to Home</span>
-            </a>
+    <nav class="nav-bar">
+        <div class="nav-logo">Exteroid</div>
+        <div class="nav-links">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="../features.html" class="nav-link">Features</a>
+            <a href="../about.html" class="nav-link">About</a>
+            <a href="../contact.html" class="nav-link">Contact</a>
         </div>
     </nav>
 
-    <!-- Main Layout: 3 Columns (Left Ad, Content, Right Ad) -->
-    <div class="main-layout">
-
-        <!-- Left Ad Column -->
-        <aside class="ad-column ad-column-left">
-            <div class="ad-placeholder">
-                <!-- AdSense placeholder -->
-            </div>
-        </aside>
-
-        <!-- Center Content Panel -->
-        <main class="content-panel">
-
-            <!-- Page Header -->
-            <header class="page-header">
-                <h1>
-                    <i class="fas fa-image"></i>
-                    Advanced Image to Data Extractor
-                </h1>
-                <p class="subtitle">Upload unlimited images, select custom fields, and extract structured data with
-                    AI-powered OCR</p>
-            </header>
-
-            <!-- STEP 1: Upload Images -->
-            <section id="step-1-upload" class="step-section active">
-                <div class="section-card">
-                    <div class="section-header">
-                        <div class="step-badge">Step 1</div>
-                        <h2>Upload Images</h2>
-                    </div>
-                    <p class="helper-text">
-                        <i class="fas fa-info-circle"></i>
-                        Upload unlimited images containing the data you want to extract
-                    </p>
-
-                    <!-- Upload Drop Zone -->
-                    <div id="drop-zone" class="drop-zone">
-                        <i class="fas fa-cloud-upload-alt drop-icon"></i>
-                        <p class="upload-title">Drag & Drop Images Here</p>
-                        <p class="upload-subtitle">or click to browse</p>
-                        <input type="file" id="file-input" accept="image/*" multiple class="hidden-input">
-                        <button type="button" class="btn-upload" id="btn-browse">
-                            <i class="fas fa-folder-open"></i> Browse Files
-                        </button>
-                        <p class="upload-info">
-                            Accepted: JPG, PNG, WEBP | No file limit | Unlimited images
-                        </p>
-                    </div>
-
-                    <!-- File Stats -->
-                    <div id="file-stats" class="file-stats hidden">
-                        <div class="stats-badge">
-                            <i class="fas fa-images"></i>
-                            <span id="file-count-text">0 images uploaded</span>
-                        </div>
-                        <button type="button" class="btn-clear-files" id="btn-clear-files">
-                            <i class="fas fa-trash"></i> Clear All
-                        </button>
-                    </div>
-
-                    <!-- Thumbnail Grid -->
-                    <div id="thumbnail-grid" class="thumbnail-grid hidden"></div>
-
-                    <!-- Next Button -->
-                    <div class="action-buttons">
-                        <button type="button" class="btn-primary" id="btn-to-field-selection" disabled>
-                            Select Data Fields <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-            <!-- STEP 2: Select Data Fields -->
-            <section id="step-2-fields" class="step-section hidden">
-                <div class="section-card">
-                    <div class="section-header">
-                        <div class="step-badge">Step 2</div>
-                        <h2>Select Data Fields to Extract</h2>
-                    </div>
-                    <p class="helper-text">
-                        <i class="fas fa-info-circle"></i>
-                        Choose which types of data you want to extract from your images
-                    </p>
-
-                    <!-- Field Selection Grid -->
-                    <div class="field-selection-grid">
-                        <!-- Predefined Fields -->
-                        <label class="field-option">
-                            <input type="checkbox" name="field" value="name" id="field-name">
-                            <div class="field-card">
-                                <i class="fas fa-user"></i>
-                                <span>Name</span>
-                            </div>
-                        </label>
-
-                        <label class="field-option">
-                            <input type="checkbox" name="field" value="mobile" id="field-mobile">
-                            <div class="field-card">
-                                <i class="fas fa-phone"></i>
-                                <span>Mobile Number</span>
-                            </div>
-                        </label>
-
-                        <label class="field-option">
-                            <input type="checkbox" name="field" value="email" id="field-email">
-                            <div class="field-card">
-                                <i class="fas fa-envelope"></i>
-                                <span>Email</span>
-                            </div>
-                        </label>
-
-                        <label class="field-option">
-                            <input type="checkbox" name="field" value="address" id="field-address">
-                            <div class="field-card">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Address</span>
-                            </div>
-                        </label>
-
-                        <label class="field-option">
-                            <input type="checkbox" name="field" value="city" id="field-city">
-                            <div class="field-card">
-                                <i class="fas fa-city"></i>
-                                <span>City</span>
-                            </div>
-                        </label>
-
-                        <label class="field-option">
-                            <input type="checkbox" name="field" value="state" id="field-state">
-                            <div class="field-card">
-                                <i class="fas fa-flag"></i>
-                                <span>State</span>
-                            </div>
-                        </label>
-
-                        <label class="field-option">
-                            <input type="checkbox" name="field" value="pincode" id="field-pincode">
-                            <div class="field-card">
-                                <i class="fas fa-map-pin"></i>
-                                <span>Pincode</span>
-                            </div>
-                        </label>
-
-                        <label class="field-option">
-                            <input type="checkbox" name="field" value="id" id="field-id">
-                            <div class="field-card">
-                                <i class="fas fa-id-card"></i>
-                                <span>ID/Registration</span>
-                            </div>
-                        </label>
-
-                        <label class="field-option">
-                            <input type="checkbox" name="field" value="date" id="field-date">
-                            <div class="field-card">
-                                <i class="fas fa-calendar"></i>
-                                <span>Date</span>
-                            </div>
-                        </label>
-
-                        <label class="field-option">
-                            <input type="checkbox" name="field" value="custom" id="field-custom">
-                            <div class="field-card">
-                                <i class="fas fa-plus"></i>
-                                <span>Custom Field</span>
-                            </div>
-                        </label>
-                    </div>
-
-                    <!-- Selected Fields Summary -->
-                    <div class="selected-summary">
-                        <p id="selected-count">0 fields selected</p>
-                    </div>
-
-                    <!-- Action Buttons -->
-                    <div class="action-buttons">
-                        <button type="button" class="btn-secondary" id="btn-back-to-upload">
-                            <i class="fas fa-arrow-left"></i> Back
-                        </button>
-                        <button type="button" class="btn-primary" id="btn-start-extraction" disabled>
-                            <i class="fas fa-play"></i> Start Extraction
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-            <!-- STEP 3: Processing (with Console) -->
-            <section id="step-3-processing" class="step-section hidden">
-                <div class="section-card">
-                    <div class="section-header">
-                        <div class="step-badge">Step 3</div>
-                        <h2>Processing Images</h2>
-                    </div>
-                    <p class="helper-text">
-                        <i class="fas fa-info-circle"></i>
-                        Extracting data using AI-powered OCR... Please wait
-                    </p>
-
-                    <!-- Progress Bar -->
-                    <div class="progress-container">
-                        <div class="progress-bar">
-                            <div id="progress-fill" class="progress-fill"></div>
-                        </div>
-                        <p id="progress-text" class="progress-text">Initializing OCR engine...</p>
-                    </div>
-
-                    <!-- Console Window -->
-                    <div class="console-window">
-                        <div class="console-header">
-                            <i class="fas fa-terminal"></i> Processing Console
-                        </div>
-                        <div id="console-output" class="console-output">
-                            <div class="log-entry">[System] Ready to process</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- STEP 4: Data Preview -->
-            <section id="step-4-preview" class="step-section hidden">
-                <div class="section-card">
-                    <div class="section-header">
-                        <div class="step-badge">Step 4</div>
-                        <h2>Data Preview</h2>
-                    </div>
-                    <p class="helper-text">
-                        <i class="fas fa-info-circle"></i>
-                        Review extracted data. You can edit any cell by clicking on it.
-                    </p>
-
-                    <!-- Data Stats -->
-                    <div class="data-stats">
-                        <div class="stat-card">
-                            <i class="fas fa-table"></i>
-                            <div>
-                                <h4>Total Rows</h4>
-                                <p id="total-rows-preview">0</p>
-                            </div>
-                        </div>
-                        <div class="stat-card">
-                            <i class="fas fa-columns"></i>
-                            <div>
-                                <h4>Columns</h4>
-                                <p id="total-columns-preview">0</p>
-                            </div>
-                        </div>
-                        <div class="stat-card">
-                            <i class="fas fa-eye"></i>
-                            <div>
-                                <h4>Displaying</h4>
-                                <p id="displaying-rows">First 20 rows</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Data Table -->
-                    <div class="table-wrapper">
-                        <div id="preview-table-container" class="table-scroll"></div>
-                    </div>
-
-                    <!-- Action Buttons -->
-                    <div class="action-buttons">
-                        <button type="button" class="btn-secondary" id="btn-back-to-fields">
-                            <i class="fas fa-arrow-left"></i> Back
-                        </button>
-                        <button type="button" class="btn-primary" id="btn-confirm-data">
-                            Confirm Data <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Mid-Page Ad -->
-            <div class="ad-container mid">
-                <div class="ad-slot ad-728x90"></div>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="badge fade-up">
+                <span class="dot"></span>
+                <span class="badge-text">AI-Powered Data Extraction</span>
             </div>
 
-            <!-- STEP 5: Data Cleaning Options -->
-            <section id="step-5-cleaning" class="step-section hidden">
-                <div class="section-card">
-                    <div class="section-header">
-                        <div class="step-badge">Step 5</div>
-                        <h2>Data Cleaning Options</h2>
-                    </div>
-                    <p class="helper-text">
-                        <i class="fas fa-info-circle"></i>
-                        Select cleaning operations to apply to your data
-                    </p>
+            <h1 class="hero-title fade-up delay-1">
+                <span class="title-main">Transform Images to</span>
+                <span class="title-gradient">Excel Data</span>
+            </h1>
 
-                    <!-- Cleaning Options Grid -->
-                    <div class="cleaning-options-grid">
-                        <!-- Basic Cleaning -->
-                        <div class="cleaning-card">
-                            <div class="cleaning-icon">
-                                <i class="fas fa-broom"></i>
-                            </div>
-                            <h3>Basic Cleaning</h3>
-                            <div class="cleaning-options">
-                                <label class="checkbox-option">
-                                    <input type="checkbox" id="clean-empty-rows" checked>
-                                    <span>Remove empty rows</span>
-                                </label>
-                                <label class="checkbox-option">
-                                    <input type="checkbox" id="clean-trim" checked>
-                                    <span>Trim whitespace</span>
-                                </label>
-                                <label class="checkbox-option">
-                                    <input type="checkbox" id="clean-duplicates" checked>
-                                    <span>Remove duplicate rows</span>
-                                </label>
-                            </div>
-                        </div>
+            <p class="hero-subtitle fade-up delay-2">
+                Extract structured data from images and PDFs instantly with AI-powered OCR.
+                Automatically detects Name, Phone, Email, Address, and Date fields—all processed
+                100% locally in your browser for complete privacy.
+            </p>
 
-                        <!-- Smart Formatting -->
-                        <div class="cleaning-card">
-                            <div class="cleaning-icon">
-                                <i class="fas fa-magic"></i>
-                            </div>
-                            <h3>Smart Formatting</h3>
-                            <div class="cleaning-options">
-                                <label class="checkbox-option">
-                                    <input type="checkbox" id="clean-format-mobile" checked>
-                                    <span>Extract valid 10-digit mobile (remove +91)</span>
-                                </label>
-                                <label class="checkbox-option">
-                                    <input type="checkbox" id="clean-format-email" checked>
-                                    <span>Clean & validate emails</span>
-                                </label>
-                                <label class="checkbox-option">
-                                    <input type="checkbox" id="clean-format-names" checked>
-                                    <span>Format names (Title Case)</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Action Buttons -->
-                    <div class="action-buttons">
-                        <button type="button" class="btn-secondary" id="btn-back-to-preview">
-                            <i class="fas fa-arrow-left"></i> Back
-                        </button>
-                        <button type="button" class="btn-primary" id="btn-apply-cleaning">
-                            <i class="fas fa-cogs"></i> Apply Cleaning
-                        </button>
-                    </div>
+            <div class="feature-pills fade-up delay-3">
+                <div class="pill">
+                    <i class="fas fa-camera"></i>
+                    <span>Images & PDFs</span>
                 </div>
-            </section>
-
-            <!-- STEP 6: Final Preview & Export -->
-            <section id="step-6-export" class="step-section hidden">
-                <div class="section-card">
-                    <div class="section-header">
-                        <div class="step-badge">Step 6</div>
-                        <h2>Final Preview & Export</h2>
-                    </div>
-                    <p class="helper-text">
-                        <i class="fas fa-info-circle"></i>
-                        Review your cleaned data and export to Excel or CSV
-                    </p>
-
-                    <!-- Transformation Summary -->
-                    <div id="transformation-summary" class="transformation-summary">
-                        <div class="summary-card">
-                            <i class="fas fa-table"></i>
-                            <div>
-                                <h4>Total Rows</h4>
-                                <p id="final-rows-count">0</p>
-                            </div>
-                        </div>
-                        <div class="summary-card">
-                            <i class="fas fa-columns"></i>
-                            <div>
-                                <h4>Columns</h4>
-                                <p id="final-columns-count">0</p>
-                            </div>
-                        </div>
-                        <div class="summary-card">
-                            <i class="fas fa-trash"></i>
-                            <div>
-                                <h4>Rows Removed</h4>
-                                <p id="rows-removed-count">0</p>
-                            </div>
-                        </div>
-                        <div class="summary-card">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <h4>Final Rows</h4>
-                                <p id="final-remaining-rows">0</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Final Data Preview -->
-                    <div class="final-preview">
-                        <h3>
-                            <i class="fas fa-table"></i>
-                            Final Data Preview (First 20 rows)
-                        </h3>
-                        <div id="final-table-container" class="table-scroll"></div>
-                    </div>
-
-                    <!-- Export Options -->
-                    <div class="export-options">
-                        <h3>Choose Export Format</h3>
-                        <div class="export-buttons-grid">
-                            <button type="button" class="btn-export btn-excel" id="btn-export-excel">
-                                <i class="fas fa-file-excel"></i>
-                                <span class="export-label">Download Excel</span>
-                                <span class="export-format">.xlsx format</span>
-                            </button>
-                            <button type="button" class="btn-export btn-csv" id="btn-export-csv">
-                                <i class="fas fa-file-csv"></i>
-                                <span class="export-label">Download CSV</span>
-                                <span class="export-format">.csv format</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Action Buttons -->
-                    <div class="action-buttons">
-                        <button type="button" class="btn-secondary" id="btn-start-over">
-                            <i class="fas fa-redo"></i> Start Over
-                        </button>
-                    </div>
+                <div class="pill">
+                    <i class="fas fa-bolt"></i>
+                    <span>AI-Powered OCR</span>
                 </div>
-            </section>
-
-        </main>
-
-        <!-- Right Ad Column -->
-        <aside class="ad-column ad-column-right">
-            <div class="ad-placeholder">
-                <!-- AdSense placeholder -->
-            </div>
-        </aside>
-
-    </div>
-
-    <!-- Loading Overlay -->
-    <div id="loading-overlay" class="loading-overlay hidden">
-        <div class="loading-spinner">
-            <i class="fas fa-spinner fa-spin"></i>
-            <p id="loading-text">Processing...</p>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="cosmic-footer">
-        <div class="footer-container">
-            <div class="footer-brand">
-                <div class="footer-logo">
-                    <img src="../images/logo.png" alt="EXTEROID Logo">
-                    <span>EXTEROID</span>
+                <div class="pill">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>100% Private</span>
                 </div>
-                <p class="footer-tagline">Excel Power. Cosmic Scale.</p>
-            </div>
-            <div class="footer-links">
-                <a href="../index.html">Home</a>
-                <a href="../about.html">About</a>
-                <a href="../privacy.html">Privacy</a>
-                <a href="../contact.html">Contact</a>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 EXTEROID. All rights reserved.</p>
+
+        <!-- Bottom fade -->
+        <div class="hero-fade"></div>
+    </section>
+
+    <!-- MAIN FUNCTIONALITY SECTION -->
+    <main class="main-content">
+        <div class="app-container">
+
+            <!-- STATE 1: UPLOAD (Default) -->
+            <div id="state-upload" class="fade-in">
+                <div id="drop-zone" class="upload-area">
+                    <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                    <p class="upload-text-main">
+                        Drag & Drop images or PDFs here
+                    </p>
+                    <p class="upload-text-sub">
+                        or click to browse files
+                    </p>
+                    <input type="file" id="file-input" accept="image/*,.pdf" multiple style="display:none;">
+                </div>
+            </div>
+
+            <!-- STATE 2: READY (Hidden) -->
+            <div id="state-ready" class="ready-state hidden">
+                <div class="file-count">
+                    <span id="ready-count-num">0</span> files ready
+                </div>
+                <button type="button" id="btn-extract" class="btn btn-primary">
+                    <i class="fas fa-bolt"></i> Extract Data
+                </button>
+            </div>
+
+            <!-- STATE 3: PROCESSING (Hidden) -->
+            <div id="state-processing" class="processing-state hidden">
+                <div class="spinner"></div>
+                <p id="processing-text" class="processing-text">Reading image...</p>
+            </div>
+
+            <!-- STATE 4: RESULT (Hidden) -->
+            <div id="state-result" class="results-area hidden">
+
+                <div class="table-wrapper">
+                    <div id="result-table-container">
+                        <!-- Table injected here -->
+                    </div>
+                </div>
+
+                <div class="results-footer">
+                    <i class="fas fa-check-circle"></i> Data cleaned and formatted automatically.
+                </div>
+
+                <div class="data-stats" id="data-stats">
+                    <!-- Statistics will be injected here by JS -->
+                </div>
+
+                <div class="action-row">
+                    <button type="button" id="btn-download-excel" class="btn btn-primary">
+                        <i class="fas fa-file-excel"></i> Download Excel
+                    </button>
+                    <button type="button" id="btn-download-csv" class="btn btn-secondary">
+                        <i class="fas fa-file-csv"></i> Download CSV
+                    </button>
+                    <button type="button" id="btn-reset" class="btn btn-secondary"
+                        style="border:none; background:transparent;">
+                        Start Over
+                    </button>
+                </div>
+            </div>
+
         </div>
+
+    </main>
+
+    <!-- Simple Footer -->
+    <footer
+        style="text-align: center; color: rgba(255,255,255,0.4); padding-bottom: 2rem; font-size: 0.9rem; position: relative; z-index: 10;">
+        &copy; 2026 EXTEROID. Proprietary software. Reverse engineering prohibited.
     </footer>
 
-    <!-- Custom JavaScript -->
+    <!-- Logic -->
     <script src="js/imgdoc.js"></script>
 
-    <!-- Audio Background -->
-    <audio id="universe-audio" loop style="display:none;">
-        <source src="../images/sound%20of%20the%20universe.mp3" type="audio/mpeg">
-    </audio>
+    <!-- DevTools Protection -->
     <script>
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && ['I', 'C', 'J'].includes(e.key)) || (e.ctrlKey && e.key === 'U')) { e.preventDefault(); return false; }
+        });
         (function () {
-            var audio = document.getElementById('universe-audio');
-            if (audio) {
-                audio.volume = 1.0;
-                var playAudio = function () {
-                    audio.play().catch(function (e) {
-                        console.log("Autoplay prevented:", e);
-                        document.addEventListener('click', function () {
-                            audio.play();
-                        }, { once: true });
-                    });
-                };
-                playAudio();
-            }
+            const threshold = 160;
+            setInterval(() => {
+                if (window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold) {
+                    document.body.innerHTML = `<div style="height:100vh;display:flex;align-items:center;justify-content:center;background:#000;color:#fff;font-family:sans-serif;text-align:center"><div><h2>⚠️ Developer Tools Detected</h2><p>This action is not allowed.</p></div></div>`;
+                }
+            }, 1000);
         })();
     </script>
+
 </body>
 
 </html>

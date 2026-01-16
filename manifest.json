@@ -1,0 +1,64 @@
+{
+  "name": "EXTEROID - Excel Automation Tools",
+  "short_name": "EXTEROID",
+  "description": "Professional Excel automation tools powered by AI. Extract, consolidate, and clean data with 100% privacy.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#6366f1",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/images/icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/icons/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/icons/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["productivity", "business", "utilities"],
+  "shortcuts": [
+    {
+      "name": "Image to Excel",
+      "short_name": "OCR Tool",
+      "description": "Extract data from images",
+      "url": "/t/a92kq1",
+      "icons": [{ "src": "/images/icons/android-chrome-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Excel Consolidator",
+      "short_name": "Merge Files",
+      "description": "Merge multiple Excel files",
+      "url": "/t/x81p0d",
+      "icons": [{ "src": "/images/icons/android-chrome-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Smart Excel Cleaner",
+      "short_name": "Clean Data",
+      "description": "Clean and format Excel data",
+      "url": "/t/m55zz2",
+      "icons": [{ "src": "/images/icons/android-chrome-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}

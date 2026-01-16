@@ -1,5 +1,5 @@
 /**
- * EXTEROID - Features Page Animations
+ * EXTEROID - Terms Page JavaScript
  */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -24,20 +24,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // --- NAVBAR SCROLL EFFECT ---
     const navbar = document.querySelector('.nav-bar');
-    let lastScroll = 0;
 
     if (navbar) {
         window.addEventListener('scroll', () => {
             const currentScroll = window.pageYOffset;
 
-            // Hide/show navbar on scroll
-            if (currentScroll > lastScroll && currentScroll > 100) {
-                navbar.style.transform = 'translateY(-100%)';
-            } else {
-                navbar.style.transform = 'translateY(0)';
-            }
-
-            // Background change
             if (currentScroll > 50) {
                 navbar.style.background = 'rgba(0, 0, 0, 0.9)';
                 navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.5)';
@@ -45,8 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 navbar.style.background = 'rgba(0, 0, 0, 0.5)';
                 navbar.style.boxShadow = 'none';
             }
-
-            lastScroll = currentScroll;
         });
     }
 
@@ -64,16 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // --- FEATURE CARD HOVER EFFECT ---
-    const featureCards = document.querySelectorAll('.feature-card');
-
-    featureCards.forEach(card => {
-        card.addEventListener('mouseenter', function () {
-            this.style.transition = 'all 0.5s cubic-bezier(0.25, 0.4, 0.25, 1)';
-        });
-    });
-
     // --- LOG INITIALIZATION ---
-    console.log('%c🚀 EXTEROID Features', 'color: #6366f1; font-size: 16px; font-weight: bold;');
-    console.log('%cClean Design • Premium Experience', 'color: #a5b4fc; font-size: 12px;');
+    console.log('%c🚀 EXTEROID Terms', 'color: #6366f1; font-size: 16px; font-weight: bold;');
+    console.log('%cTerms and Conditions • Read Carefully', 'color: #a5b4fc; font-size: 12px;');
 });

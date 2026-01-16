@@ -2,379 +2,120 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EXTEROID | Cosmic Scale Excel Automation</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>EXTEROID | Professional Excel Automation Tools - AI-Powered Data Processing</title>
+    <meta name="title" content="EXTEROID | Professional Excel Automation Tools - AI-Powered Data Processing">
     <meta name="description"
-        content="Professional Excel automation tools powered by precision, speed, and browser-based intelligence.">
+        content="Professional Excel automation tools powered by AI. Extract data from images with OCR, consolidate multiple files, and automate data cleaning—100% free, browser-based, completely private.">
+    <meta name="keywords"
+        content="Excel automation, Excel tools, AI Excel, OCR Excel, Excel data cleaning, browser Excel tools, free Excel tools">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="author" content="EXTEROID">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://exteroid.pages.dev/">
+    <meta property="og:title" content="EXTEROID | Professional Excel Automation Tools - AI-Powered">
+    <meta property="og:description"
+        content="Professional Excel automation tools powered by AI. Extract data from images with OCR, consolidate multiple files, and automate data cleaning—100% free and private.">
+    <meta property="og:image" content="https://exteroid.pages.dev/images/logo.png">
+    <meta property="og:site_name" content="EXTEROID">
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://exteroid.pages.dev/">
+    <meta property="twitter:title" content="EXTEROID | Professional Excel Automation Tools">
+    <meta property="twitter:description"
+        content="Professional Excel automation tools powered by AI. 100% free, browser-based, completely private.">
+    <meta property="twitter:image" content="https://exteroid.pages.dev/images/logo.png">
+
+    <!-- Geo Targeting -->
+    <meta name="geo.region" content="IN" />
+    <meta name="geo.placename" content="India" />
+    <meta name="geo.position" content="28.6139;77.2090" />
+    <meta name="ICBM" content="28.6139, 77.2090" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://exteroid.pages.dev/">
+
+    <!-- Favicons & App Icons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/icons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/images/icons/android-chrome-512x512.png">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#6366f1">
+    <meta name="msapplication-TileColor" content="#6366f1">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7740739312709675"
         crossorigin="anonymous"></script>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/logo.png">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/index.css" />
 
-    <!-- Google Fonts: Orbitron for headers, Inter for body -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@500;700;900&display=swap"
-        rel="stylesheet">
-
-    <!-- Import Map for Three.js (using reliable esm.sh CDN) -->
-    <script type="importmap">
-        {
-            "imports": {
-                "three": "https://esm.sh/three@0.160.0"
-            }
-        }
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "EXTEROID",
+      "url": "https://exteroid.pages.dev",
+      "logo": "https://exteroid.pages.dev/images/logo.png",
+      "description": "Professional Excel automation tools powered by AI - Extract, consolidate, and clean data with 100% privacy",
+      "sameAs": [],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Support",
+        "url": "https://exteroid.pages.dev/contact.html"
+      }
+    }
     </script>
-
-    <style>
-        /* --- 1. VARIABLES & RESET --- */
-        :root {
-            --color-bg: #020205;
-            /* Deep space black */
-            --color-primary: #00f0ff;
-            /* Electric Cyan */
-            --color-secondary: #7000ff;
-            /* Deep Violet */
-            --color-accent: #ffffff;
-            --font-display: 'Orbitron', sans-serif;
-            --font-body: 'Inter', sans-serif;
-            --spacing-unit: 1rem;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: var(--color-bg);
-            color: var(--color-accent);
-            font-family: var(--font-body);
-            overflow: hidden;
-            width: 100vw;
-            height: 100vh;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        /* --- 2. CANVAS --- */
-        #webgl-canvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            outline: none;
-            /* Subtle vignette via CSS to focus center */
-            mask-image: radial-gradient(circle, black 60%, rgba(0, 0, 0, 0.8) 100%);
-        }
-
-        /* --- 3. UI LAYOUT --- */
-        .ui-layer {
-            position: relative;
-            z-index: 10;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            /* Header top, content center, footer bottom */
-            pointer-events: none;
-            background: radial-gradient(circle at center, transparent 0%, rgba(2, 2, 8, 0.6) 100%);
-        }
-
-        /* --- 4. NAVIGATION --- */
-        .nav-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 2rem 3rem;
-            width: 100%;
-            pointer-events: auto;
-            backdrop-filter: blur(2px);
-        }
-
-        .nav-logo {
-            font-family: var(--font-display);
-            font-weight: 700;
-            font-size: 1.5rem;
-            letter-spacing: 0.1em;
-            color: var(--color-accent);
-            text-transform: uppercase;
-            text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-        }
-
-        .nav-link {
-            color: rgba(255, 255, 255, 0.7);
-            text-decoration: none;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            transition: color 0.3s ease;
-        }
-
-        .nav-link:hover {
-            color: var(--color-primary);
-        }
-
-        /* --- 5. HERO CONTENT --- */
-        .hero-container {
-            text-align: center;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            pointer-events: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            /* Entrance Animation */
-            opacity: 0;
-            /* Slightly negative margin to push it up visually */
-            margin-top: -5vh;
-            transform: translateY(20px);
-            animation: cinematicFadeIn 2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
-            animation-delay: 0.5s;
-        }
-
-        /* Removed .badge styles since element is deleted */
-
-        h1 {
-            font-family: var(--font-display);
-            font-size: clamp(3rem, 7vw, 6rem);
-            line-height: 1.05;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            letter-spacing: -0.02em;
-            text-transform: uppercase;
-            /* Gradient Text */
-            background: linear-gradient(180deg, #ffffff 0%, #b0c4ff 100%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 0 30px rgba(112, 0, 255, 0.3));
-        }
-
-        p.subheading {
-            font-size: clamp(1rem, 2vw, 1.25rem);
-            color: rgba(255, 255, 255, 0.8);
-            margin-bottom: 3rem;
-            line-height: 1.6;
-            max-width: 600px;
-            font-weight: 300;
-        }
-
-        /* --- 6. BUTTONS --- */
-        .btn-group {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-        }
-
-        .btn {
-            position: relative;
-            padding: 1rem 2.5rem;
-            font-family: var(--font-display);
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            font-size: 0.9rem;
-            text-decoration: none;
-            cursor: pointer;
-            transition: all 0.4s ease;
-            clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
-        }
-
-        .btn-primary {
-            background: var(--color-accent);
-            color: #000;
-            border: none;
-        }
-
-        .btn-primary:hover {
-            background: var(--color-primary);
-            box-shadow: 0 0 30px rgba(0, 240, 255, 0.4);
-            transform: translateY(-2px);
-        }
-
-        .btn-secondary {
-            background: rgba(255, 255, 255, 0.05);
-            color: var(--color-accent);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-        }
-
-        .btn-secondary:hover {
-            border-color: var(--color-primary);
-            color: var(--color-primary);
-            background: rgba(0, 240, 255, 0.05);
-        }
-
-        /* --- 7. FOOTER --- */
-        .footer {
-            text-align: center;
-            padding: 2rem;
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.3);
-            pointer-events: auto;
-        }
-
-        /* --- 8. ANIMATIONS --- */
-        @keyframes cinematicFadeIn {
-            to {
-                opacity: 1;
-                /* Reset transform to the shifted position if needed, or just 0 */
-                transform: translateY(0);
-            }
-        }
-
-        /* Mobile Adjustments */
-        @media (max-width: 768px) {
-
-            /* Navigation */
-            .nav-bar {
-                padding: 1rem 1.5rem;
-                flex-wrap: wrap;
-            }
-
-            .nav-logo {
-                font-size: 1.2rem;
-                letter-spacing: 0.08em;
-            }
-
-            .nav-links {
-                display: none;
-            }
-
-            /* Hero Container */
-            .hero-container {
-                margin-top: -5vh;
-                padding: 0 1.5rem;
-            }
-
-            /* Heading - Better size for mobile */
-            h1 {
-                font-size: clamp(2rem, 10vw, 3.5rem);
-                line-height: 1.1;
-                margin-bottom: 1rem;
-                letter-spacing: -0.01em;
-            }
-
-            /* Subheading - Improved readability */
-            p.subheading {
-                font-size: clamp(0.9rem, 4vw, 1.1rem);
-                margin-bottom: 2rem;
-                line-height: 1.5;
-                max-width: 100%;
-            }
-
-            /* Button Group */
-            .btn-group {
-                flex-direction: column;
-                width: 100%;
-                max-width: 280px;
-                gap: 1rem;
-            }
-
-            /* Buttons */
-            .btn {
-                width: 100%;
-                text-align: center;
-                padding: 0.9rem 2rem;
-                font-size: 0.85rem;
-                letter-spacing: 0.08em;
-            }
-
-            /* Footer */
-            .footer {
-                padding: 1.5rem 1rem;
-                font-size: 0.75rem;
-            }
-        }
-
-        /* Extra small devices (phones in portrait, less than 576px) */
-        @media (max-width: 576px) {
-            .nav-bar {
-                padding: 0.8rem 1rem;
-            }
-
-            .nav-logo {
-                font-size: 1rem;
-            }
-
-            .hero-container {
-                margin-top: -3vh;
-                padding: 0 1rem;
-            }
-
-            h1 {
-                font-size: clamp(1.8rem, 11vw, 2.5rem);
-                margin-bottom: 0.8rem;
-            }
-
-            p.subheading {
-                font-size: clamp(0.85rem, 4.5vw, 1rem);
-                margin-bottom: 1.5rem;
-                line-height: 1.4;
-            }
-
-            .btn-group {
-                max-width: 100%;
-                gap: 0.8rem;
-            }
-
-            .btn {
-                padding: 0.8rem 1.5rem;
-                font-size: 0.8rem;
-            }
-
-            .footer {
-                padding: 1.2rem 0.8rem;
-                font-size: 0.7rem;
-            }
-        }
-
-        /* Landscape orientation for mobile */
-        @media (max-width: 768px) and (orientation: landscape) {
-            .hero-container {
-                margin-top: 0;
-            }
-
-            h1 {
-                font-size: clamp(1.5rem, 6vw, 2.5rem);
-            }
-
-            p.subheading {
-                font-size: clamp(0.8rem, 2vw, 1rem);
-                margin-bottom: 1.5rem;
-            }
-
-            .btn-group {
-                flex-direction: row;
-                max-width: 500px;
-                gap: 1rem;
-            }
-        }
-    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "EXTEROID",
+      "url": "https://exteroid.pages.dev",
+      "description": "Excel Power at Cosmic Scale - Professional automation tools",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://exteroid.pages.dev/features.html?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
 </head>
 
-<body>
+<body oncontextmenu="return false;">
 
-    <!-- 1. WebGL Background -->
-    <canvas id="webgl-canvas"></canvas>
+    <section class="hero">
+        <!-- Background glow -->
+        <div class="hero-bg"></div>
 
-    <!-- 2. Overlay UI -->
-    <main class="ui-layer">
+        <!-- Floating shapes -->
+        <div class="shapes">
+            <div class="shape shape-indigo"></div>
+            <div class="shape shape-rose"></div>
+            <div class="shape shape-violet"></div>
+            <div class="shape shape-amber"></div>
+            <div class="shape shape-cyan"></div>
+            <div class="shape shape-emerald"></div>
+            <div class="shape shape-purple"></div>
+        </div>
 
         <!-- Navigation -->
         <nav class="nav-bar">
@@ -387,294 +128,85 @@
             </div>
         </nav>
 
-        <!-- Hero Section -->
-        <div class="hero-container">
-            <!-- Badge Removed Here -->
+        <!-- Hero content -->
+        <div class="hero-content">
+            <div class="badge fade-up">
+                <span class="dot"></span>
+                <span class="badge-text">AI-Powered Data Tools</span>
+            </div>
 
-            <h1>Excel Power at<br>Cosmic Scale</h1>
+            <h1 class="hero-title fade-up delay-1">
+                <span class="title-main">Excel Power at</span>
+                <span class="title-gradient">Cosmic Scale</span>
+            </h1>
 
-            <p class="subheading">
-                Professional Excel automation tools powered by precision, speed, and browser-based intelligence.
-                Experience the future of data.
+            <p class="hero-subtitle fade-up delay-2">
+                Professional Excel automation tools powered by AI. Extract data from images with OCR,
+                consolidate multiple files, and automate data cleaning—all 100% locally in your browser.
             </p>
 
-            <div class="btn-group">
-                <a href="features_pages/smartexcel.html" class="btn btn-primary">Launch Tools</a>
-                <a href="features.html" class="btn btn-secondary">Explore Features</a>
+            <div class="btn-group fade-up delay-3">
+                <a href="/t/a92kq1" class="btn btn-primary">
+                    <span class="btn-text">Launch Tools</span>
+                    <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="features.html" class="btn btn-secondary">
+                    <span class="btn-text">Explore Features</span>
+                </a>
             </div>
         </div>
 
-        <!-- Footer -->
-        <footer class="footer">
-            &copy; 2025 Exteroid. All rights reserved.
-        </footer>
-    </main>
+        <!-- Bottom fade -->
+        <div class="hero-fade"></div>
+    </section>
 
-    <!-- 3. Three.js Application Logic -->
-    <script type="module">
-        import * as THREE from 'three';
+    <!-- Footer -->
+    <footer class="footer">
+        &copy; 2026 EXTEROID. Proprietary software. Reverse engineering prohibited.
+    </footer>
 
-        /**
-         * 🌌 EXTEROID GALAXY ENGINE
-         * High-performance procedural galaxy generator
-         */
+    <!-- JavaScript -->
+    <script src="js/index.js"></script>
 
-        // --- CONFIGURATION ---
-        const config = {
-            // Galaxy Math
-            count: window.innerWidth < 768 ? 8000 : 25000, // Reduced on mobile
-            size: 0.02,
-            radius: 5,
-            branches: 5, // More arms for a richer look
-            spin: 1,
-            randomness: 0.3,
-            randomnessPower: 3,
-
-            // Colors (H,S,L based logic usually, but here we use Hex)
-            insideColor: '#00f0ff', // Electric Cyan Core
-            outsideColor: '#7000ff', // Deep Violet Outer Arms
-
-            // Core Sphere
-            coreSize: 0.35,
-            coreColor: '#ffffff',
-            glowColor: '#00f0ff'
-        };
-
-        // --- SCENE SETUP ---
-        const canvas = document.querySelector('#webgl-canvas');
-        const scene = new THREE.Scene();
-
-        // Fog for depth fading
-        scene.fog = new THREE.FogExp2(0x020205, 0.035);
-        scene.background = new THREE.Color(0x020205);
-
-        // --- CAMERA ---
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100);
-        camera.position.set(0, 3, 6); // Elevated view
-        scene.add(camera);
-
-        // --- RENDERER ---
-        const renderer = new THREE.WebGLRenderer({
-            canvas: canvas,
-            antialias: true,
-            powerPreference: 'high-performance',
-            alpha: false
-        });
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-
-        // --- OBJECTS ---
-
-        /**
-         * 1. THE ENERGY CORE
-         * A composition of meshes to create a glowing volumetric effect
-         */
-        const coreGroup = new THREE.Group();
-
-        // Inner solid core (Bright white hot center)
-        const innerCore = new THREE.Mesh(
-            new THREE.SphereGeometry(config.coreSize, 32, 32),
-            new THREE.MeshBasicMaterial({ color: config.coreColor })
-        );
-        coreGroup.add(innerCore);
-
-        // Middle Glow (Cyan) - Additive Blending
-        const midGlow = new THREE.Mesh(
-            new THREE.SphereGeometry(config.coreSize * 1.8, 32, 32),
-            new THREE.MeshBasicMaterial({
-                color: config.glowColor,
-                transparent: true,
-                opacity: 0.4,
-                blending: THREE.AdditiveBlending,
-                side: THREE.BackSide, // Render inside faces to look like volume
-                depthWrite: false
-            })
-        );
-        coreGroup.add(midGlow);
-
-        // Outer Atmosphere (Faint Purple/Blue)
-        const outerGlow = new THREE.Mesh(
-            new THREE.SphereGeometry(config.coreSize * 3.5, 32, 32),
-            new THREE.MeshBasicMaterial({
-                color: config.outsideColor,
-                transparent: true,
-                opacity: 0.1,
-                blending: THREE.AdditiveBlending,
-                side: THREE.BackSide,
-                depthWrite: false
-            })
-        );
-        coreGroup.add(outerGlow);
-
-        scene.add(coreGroup);
-
-        // Point light for realism (affects nothing here as we use BasicMaterial, but good for future standard mats)
-        const light = new THREE.PointLight(config.insideColor, 2, 10);
-        coreGroup.add(light);
-
-
-        /**
-         * 2. PROCEDURAL SPIRAL GALAXY
-         */
-        let geometry = null;
-        let material = null;
-        let points = null;
-
-        const generateGalaxy = () => {
-            if (points !== null) {
-                geometry.dispose();
-                material.dispose();
-                scene.remove(points);
-            }
-
-            geometry = new THREE.BufferGeometry();
-            const positions = new Float32Array(config.count * 3);
-            const colors = new Float32Array(config.count * 3);
-            const scales = new Float32Array(config.count);
-
-            const colorInside = new THREE.Color(config.insideColor);
-            const colorOutside = new THREE.Color(config.outsideColor);
-
-            for (let i = 0; i < config.count; i++) {
-                const i3 = i * 3;
-
-                // Radius
-                const radius = Math.random() * config.radius;
-
-                // Spiral Angle
-                const spinAngle = radius * config.spin;
-                const branchAngle = (i % config.branches) / config.branches * Math.PI * 2;
-
-                // Randomness (Power curve to concentrate stars near arms)
-                const randomX = Math.pow(Math.random(), config.randomnessPower) * (Math.random() < 0.5 ? 1 : -1) * config.randomness * radius;
-                const randomY = Math.pow(Math.random(), config.randomnessPower) * (Math.random() < 0.5 ? 1 : -1) * config.randomness * radius * 0.5; // Flatter galaxy
-                const randomZ = Math.pow(Math.random(), config.randomnessPower) * (Math.random() < 0.5 ? 1 : -1) * config.randomness * radius;
-
-                positions[i3] = Math.cos(branchAngle + spinAngle) * radius + randomX;
-                positions[i3 + 1] = randomY;
-                positions[i3 + 2] = Math.sin(branchAngle + spinAngle) * radius + randomZ;
-
-                // Color Mixing
-                const mixedColor = colorInside.clone();
-                mixedColor.lerp(colorOutside, radius / config.radius);
-
-                // Add random variation to star colors
-                mixedColor.r += (Math.random() - 0.5) * 0.1;
-                mixedColor.b += (Math.random() - 0.5) * 0.1;
-
-                colors[i3] = mixedColor.r;
-                colors[i3 + 1] = mixedColor.g;
-                colors[i3 + 2] = mixedColor.b;
-
-                // Star Sizes (Some random big stars)
-                scales[i] = Math.random();
-            }
-
-            geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-            geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
-            geometry.setAttribute('aScale', new THREE.BufferAttribute(scales, 1));
-
-            material = new THREE.PointsMaterial({
-                size: config.size,
-                sizeAttenuation: true,
-                depthWrite: false,
-                blending: THREE.AdditiveBlending,
-                vertexColors: true,
-                map: null // Could add a star texture here for more realism
-            });
-
-            points = new THREE.Points(geometry, material);
-            scene.add(points);
-        };
-
-        generateGalaxy();
-
-
-        // --- INTERACTION ---
-        const cursor = { x: 0, y: 0 };
-
-        window.addEventListener('mousemove', (event) => {
-            cursor.x = event.clientX / window.innerWidth - 0.5;
-            cursor.y = event.clientY / window.innerHeight - 0.5;
-        });
-
-        // --- ANIMATION LOOP ---
-        const clock = new THREE.Clock();
-
-        const tick = () => {
-            const elapsedTime = clock.getElapsedTime();
-
-            // 1. Galaxy Rotation (Slow & Majestic)
-            points.rotation.y = elapsedTime * 0.05;
-
-            // 2. Core Breathing (Pulse)
-            const pulse = 1 + Math.sin(elapsedTime * 1.5) * 0.05;
-            coreGroup.scale.set(pulse, pulse, pulse);
-
-            // 3. Parallax Camera
-            // Smoothly interpolate camera position towards cursor target
-            const parallaxX = cursor.x * 0.5;
-            const parallaxY = cursor.y * 0.5;
-
-            camera.position.x += (parallaxX - camera.position.x) * 0.03;
-            camera.position.y += (3 + parallaxY - camera.position.y) * 0.03; // Base height is 3
-            camera.lookAt(0, 0, 0);
-
-            // Render
-            renderer.render(scene, camera);
-
-            window.requestAnimationFrame(tick);
-        };
-
-        tick();
-
-        // --- RESIZE ---
-        window.addEventListener('resize', () => {
-            // Update sizes
-            const width = window.innerWidth;
-            const height = window.innerHeight;
-
-            // Update camera
-            camera.aspect = width / height;
-            camera.updateProjectionMatrix();
-
-            // Update renderer
-            renderer.setSize(width, height);
-            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-
-            // Re-gen galaxy for density check (optional, but good for mobile->desktop switch)
-            if (width < 768 && config.count !== 8000) {
-                config.count = 8000;
-                generateGalaxy();
-            } else if (width >= 768 && config.count !== 25000) {
-                config.count = 25000;
-                generateGalaxy();
-            }
-        });
-
-    </script>
-    <!-- Audio Background -->
-    <audio id="universe-audio" loop style="display:none;">
-        <source src="images/sound%20of%20the%20universe.mp3" type="audio/mpeg">
-    </audio>
+    <!-- DevTools Protection -->
     <script>
-        (function () {
-            var audio = document.getElementById('universe-audio');
-            if (audio) {
-                audio.volume = 1.0;
-                var playAudio = function () {
-                    audio.play().catch(function (e) {
-                        console.log("Autoplay prevented:", e);
-                        document.addEventListener('click', function () {
-                            audio.play();
-                        }, { once: true });
-                    });
-                };
-                playAudio();
+        // Keyboard shortcuts block
+        document.addEventListener('keydown', function (e) {
+            if (
+                e.key === 'F12' ||
+                (e.ctrlKey && e.shiftKey && ['I', 'C', 'J'].includes(e.key)) ||
+                (e.ctrlKey && e.key === 'U')
+            ) {
+                e.preventDefault();
+                return false;
             }
+        });
+
+        // DevTools detection
+        (function () {
+            const threshold = 160;
+            setInterval(() => {
+                if (
+                    window.outerWidth - window.innerWidth > threshold ||
+                    window.outerHeight - window.innerHeight > threshold
+                ) {
+                    document.body.innerHTML = `
+                    <div style="height:100vh;display:flex;align-items:center;justify-content:center;
+                    background:#000;color:#fff;font-family:sans-serif;text-align:center">
+                        <div>
+                            <h2>⚠️ Developer Tools Detected</h2>
+                            <p>This action is not allowed.</p>
+                        </div>
+                    </div>
+                `;
+                }
+            }, 1000);
         })();
     </script>
+
 </body>
 
 </html>
-

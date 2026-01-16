@@ -1,0 +1,22 @@
+# Cloudflare Pages Redirect Rules
+# URL Obfuscation for Exteroid
+
+# ===== REWRITE RULES (Status 200 - URL Masking) =====
+# User sees short URL, but server serves real file
+/t/a92kq1   /features_pages/imgdoc.html         200
+/t/x81p0d   /features_pages/consolidator.html   200
+/t/m55zz2   /features_pages/smartexcel.html     200
+
+/l/pv91d2   /legal/privacy.html                 200
+/l/tr21a9   /legal/terms.html                   200
+/l/li88k0   /legal/license.html                 200
+
+# ===== REDIRECT RULES (Status 301 - Permanent Redirect) =====
+# Old URLs redirect to new hidden URLs for SEO
+/features_pages/imgdoc.html        /t/a92kq1   301
+/features_pages/consolidator.html  /t/x81p0d   301
+/features_pages/smartexcel.html    /t/m55zz2   301
+
+/legal/privacy.html                /l/pv91d2   301
+/legal/terms.html                  /l/tr21a9   301
+/legal/license.html                /l/li88k0   301

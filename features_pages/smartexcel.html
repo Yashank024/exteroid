@@ -5,42 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO Meta Tags -->
-    <title>Smart Data Cleaning & Transformation – EXTEROID</title>
-
-    <!-- AdSense Script (REQUIRED) -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7740739312709675"
-        crossorigin="anonymous"></script>
-
+    <!-- Primary Meta Tags -->
+    <title>Smart Excel Cleaner | Auto-Format & Clean Excel Data | EXTEROID</title>
+    <meta name="title" content="Smart Excel Cleaner | Auto-Format & Clean Excel Data | EXTEROID">
     <meta name="description"
-        content="Clean, transform, and validate Excel data with intelligent automation. Remove duplicates, format mobile numbers, validate emails, and export clean data—100% in your browser.">
+        content="Clean messy Excel data automatically. Fix headers, format phone numbers, validate dates, remove duplicates. AI-powered data cleaning tool. 100% browser-based and private.">
     <meta name="keywords"
-        content="excel data cleaning, excel transformation, data validation, remove duplicates, format data, EXTEROID tools">
-    <meta name="author" content="EXTEROID">
+        content="Excel data cleaning, Excel formatter, Excel auto-clean, Excel data validator, clean Excel file">
     <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="author" content="EXTEROID">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://exteroid.pages.dev/features_pages/smartexcel.html">
-    <meta property="og:title" content="Smart Data Cleaning & Transformation | EXTEROID">
-    <meta property="og:description"
-        content="Clean, transform, and validate Excel data with intelligent automation—100% in your browser.">
+    <meta property="og:url" content="https://exteroid.pages.dev/t/m55zz2">
+    <meta property="og:title" content="Smart Excel Cleaning | EXTEROID">
+    <meta property="og:description" content="Clean and transform messy Excel data automatically—100% in your browser.">
     <meta property="og:image" content="https://exteroid.pages.dev/assets/og-smartexcel.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://exteroid.pages.dev/features_pages/smartexcel.html">
-    <meta property="twitter:title" content="Smart Data Cleaning & Transformation | EXTEROID">
-    <meta property="twitter:description"
-        content="Clean, transform, and validate Excel data with intelligent automation.">
+    <meta property="twitter:url" content="https://exteroid.pages.dev/t/m55zz2">
+    <meta property="twitter:title" content="Smart Excel Cleaning | EXTEROID">
+    <meta property="twitter:description" content="Clean and transform messy Excel data automatically.">
     <meta property="twitter:image" content="https://exteroid.pages.dev/assets/twitter-smartexcel.jpg">
 
-    <link rel="canonical" href="https://exteroid.pages.dev/features_pages/smartexcel.html">
+    <!-- Geo Targeting -->
+    <meta name="geo.region" content="IN" />
+    <meta name="geo.placename" content="India" />
+    <meta name="geo.position" content="28.6139;77.2090" />
+    <meta name="ICBM" content="28.6139, 77.2090" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../images/logo.png">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://exteroid.pages.dev/t/m55zz2">
 
-    <!-- SheetJS - PINNED VERSION 0.18.5 -->
+    <!-- Favicons & App Icons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/icons/android-chrome-192x192.png">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#6366f1">
+
+    <!-- SheetJS for Excel Processing -->
     <script src="https://cdn.sheetjs.com/xlsx-0.18.5/package/dist/xlsx.full.min.js"></script>
 
     <!-- FontAwesome -->
@@ -53,408 +62,296 @@
         rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="css/smartexcel.css">
+
+    <!-- JSON-LD Structured Data (WebApplication) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Smart Excel Cleaner",
+      "description": "Automated Excel data cleaning tool with smart formatting, validation, and transformation features",
+      "url": "https://exteroid.pages.dev/t/m55zz2",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web Browser",
+      "browserRequirements": "Requires JavaScript. Works with Chrome, Firefox, Safari, Edge",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "featureList": [
+        "Auto-fix column headers",
+        "Phone number formatting",
+        "Date validation",
+        "Remove empty rows and duplicates",
+        "Trim and clean whitespace"
+      ]
+    }
+    </script>
 </head>
 
-<body class="cosmic-bg">
+<body oncontextmenu="return false;">
+
+    <!-- Background Decoration (like imgdoc) -->
+    <div class="hero-bg"></div>
+    <div class="shapes">
+        <div class="shape shape-indigo"></div>
+        <div class="shape shape-rose"></div>
+        <div class="shape shape-violet"></div>
+        <div class="shape shape-amber"></div>
+        <div class="shape shape-cyan"></div>
+    </div>
 
     <!-- Navigation -->
-    <nav class="cosmic-nav">
-        <div class="nav-container">
-            <div class="logo">
-                <img src="../images/logo.png" alt="EXTEROID Logo">
-                <span>EXTEROID</span>
-            </div>
-            <a href="../index.html" class="back-home">
-                <i class="fas fa-home"></i>
-                <span>Back to Home</span>
-            </a>
+    <nav class="nav-bar">
+        <div class="nav-logo">Exteroid</div>
+        <div class="nav-links">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="../features.html" class="nav-link">Features</a>
+            <a href="../about.html" class="nav-link">About</a>
+            <a href="../contact.html" class="nav-link">Contact</a>
         </div>
     </nav>
 
-    <!-- Top AdSense Banner -->
-    <div class="ad-container top">
-        <div class="ad-slot ad-728x90"></div>
-    </div>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="badge fade-up">
+                <span class="dot"></span>
+                <span class="badge-text">AI-Powered Excel Cleaning</span>
+            </div>
 
-    <!-- Main Layout -->
-    <div class="main-layout">
+            <h1 class="hero-title fade-up delay-1">
+                <span class="title-main">Transform Messy Data to</span>
+                <span class="title-gradient">Clean Excel</span>
+            </h1>
 
-        <!-- Left Ad Sidebar -->
-        <aside class="ad-sidebar left">
-            <div class="ad-slot ad-300x600"></div>
-        </aside>
+            <p class="hero-subtitle fade-up delay-2">
+                Auto-fix headers, remove duplicates, format phone numbers, validate dates—all with one click.
+                100% browser-based, completely private.
+            </p>
 
-        <!-- Main Content -->
-        <main class="content-panel">
+            <div class="feature-pills fade-up delay-3">
+                <div class="pill">
+                    <i class="fas fa-file-excel"></i>
+                    <span>Excel/CSV</span>
+                </div>
+                <div class="pill">
+                    <i class="fas fa-magic"></i>
+                    <span>Auto Clean</span>
+                </div>
+                <div class="pill">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>100% Private</span>
+                </div>
+            </div>
+        </div>
 
-            <!-- Section 0: Page Header -->
-            <section id="section-0-header" class="page-header">
-                <div class="header-content">
-                    <h1 class="page-title">
-                        <i class="fas fa-magic"></i>
-                        Smart Data Cleaning & Transformation
-                    </h1>
-                    <p class="page-subtitle">
-                        Clean, transform, and validate Excel data with intelligent automation—100% in your browser
-                    </p>
+        <!-- Bottom fade -->
+        <div class="hero-fade"></div>
+    </section>
+
+    <!-- MAIN FUNCTIONALITY SECTION -->
+    <main class="main-content">
+        <div class="app-container">
+
+            <!-- SECTION 1: Upload -->
+            <section id="upload-section" class="section-card">
+                <div class="section-header">
+                    <h2><i class="fas fa-cloud-upload-alt"></i> Upload Excel or CSV File</h2>
+                    <p class="section-subtitle">Upload a single file to begin cleaning</p>
+                </div>
+
+                <!-- Upload Drop Zone -->
+                <div id="drop-zone" class="upload-area">
+                    <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                    <p class="upload-text-main">Drag & Drop Excel or CSV file here</p>
+                    <p class="upload-text-sub">or click to browse files</p>
+                    <input type="file" id="file-input" accept=".xlsx,.xls,.csv" style="display:none;">
+                </div>
+
+                <!-- File Selected Info -->
+                <div id="file-selected" class="file-selected hidden">
+                    <div class="file-card">
+                        <div class="file-info">
+                            <i class="fas fa-file-excel file-icon"></i>
+                            <div class="file-details">
+                                <p id="file-name" class="file-name"></p>
+                                <p id="file-size" class="file-size"></p>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-remove-file" id="btn-remove-file">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="btn-process-file">
+                        <i class="fas fa-cogs"></i> Process File
+                    </button>
                 </div>
             </section>
 
-            <!-- Section 1: File Upload -->
-            <section id="section-1-upload" class="section-container">
-                <div class="section-card">
-                    <div class="section-header">
-                        <div class="step-badge">Step 1</div>
-                        <h2>Upload Your Excel or CSV File</h2>
-                        <p class="helper-text">
-                            <i class="fas fa-info-circle"></i>
-                            Upload a single file to begin cleaning and transformation
-                        </p>
-                    </div>
+            <!-- SECTION 2: Column Selection & Clean Options -->
+            <section id="column-clean-section" class="section-card hidden">
+                <div class="section-header">
+                    <h2><i class="fas fa-columns"></i> Select Columns & Cleaning Options</h2>
+                    <p class="section-subtitle">Choose columns to keep and configure data cleaning</p>
+                </div>
 
-                    <div id="drop-zone" class="drop-zone">
-                        <i class="fas fa-cloud-upload-alt drop-icon"></i>
-                        <p class="drop-title">Drag & Drop your file here</p>
-                        <p class="drop-divider">or</p>
-                        <button type="button" class="btn-browse" id="btn-browse">
-                            <i class="fas fa-folder-open"></i> Browse Files
-                        </button>
-                        <input type="file" id="file-input" accept=".xlsx,.xls,.csv" class="hidden-input">
-                        <p class="drop-info">
-                            Accepted: .xlsx, .xls, .csv | Max: 1 file
-                            <br><span id="file-size-limit"></span>
-                        </p>
-                    </div>
-
-                    <div id="file-selected" class="file-selected hidden">
-                        <h3>File Selected:</h3>
-                        <div class="file-card">
-                            <div class="file-info">
-                                <i class="fas fa-file-excel file-icon"></i>
-                                <div class="file-details">
-                                    <p id="file-name" class="file-name"></p>
-                                    <p id="file-size" class="file-size"></p>
-                                </div>
-                            </div>
-                            <button type="button" class="btn-remove" id="btn-remove-file">
-                                <i class="fas fa-times"></i>
+                <!-- Column Chips -->
+                <div class="chips-container">
+                    <div class="chips-header">
+                        <h3>Detected Columns - Select to keep:</h3>
+                        <div class="chip-actions">
+                            <button type="button" class="chip-action-btn" id="select-all-chips">
+                                <i class="fas fa-check-double"></i> Select All
+                            </button>
+                            <button type="button" class="chip-action-btn" id="select-common-chips">
+                                <i class="fas fa-filter"></i> Common Only
+                            </button>
+                            <button type="button" class="chip-action-btn" id="deselect-all-chips">
+                                <i class="fas fa-times"></i> Clear All
                             </button>
                         </div>
-                        <button type="button" class="btn-primary" id="btn-process-file">
-                            <i class="fas fa-cogs"></i> Upload & Process
-                        </button>
+                    </div>
+
+                    <div class="chips-grid" id="chips-grid">
+                        <!-- Chips will be injected here -->
+                    </div>
+
+                    <div class="chip-legend">
+                        <span class="legend-item">
+                            <i class="fas fa-check-circle"></i> Selected
+                        </span>
+                        <span class="legend-item">
+                            <i class="fas fa-circle"></i> Available
+                        </span>
                     </div>
                 </div>
-            </section>
 
-            <!-- Section 2: Raw Data Preview -->
-            <section id="section-2-preview" class="section-container hidden">
-                <div class="section-card">
-                    <div class="section-header">
-                        <div class="step-badge">Step 2</div>
-                        <h2>Raw Data Preview</h2>
-                        <p class="helper-text">
-                            <i class="fas fa-info-circle"></i>
-                            Showing first <span id="preview-count">20</span> rows of
-                            <span id="total-rows">0</span> total rows
-                        </p>
-                    </div>
+                <!-- Advanced Options (Collapsible) -->
+                <div class="advanced-container">
+                    <button type="button" class="advanced-toggle" id="advanced-toggle">
+                        <i class="fas fa-cog"></i>
+                        <span>Advanced Options</span>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </button>
 
-                    <div class="preview-container">
-                        <div id="raw-table-container" class="table-scroll"></div>
-                    </div>
-
-                    <div class="column-types-info">
-                        <h3>Detected Column Types:</h3>
-                        <div id="column-types-display" class="column-types-grid"></div>
-                    </div>
-
-                    <div class="tip-box">
-                        <i class="fas fa-lightbulb"></i>
-                        <p>Review your data structure before proceeding. Column types are auto-detected.</p>
-                    </div>
-
-                    <div class="action-buttons">
-                        <button type="button" class="btn-primary" id="btn-to-column-ops">
-                            Proceed to Column Operations
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Section 3: Column Operations -->
-            <section id="section-3-column-ops" class="section-container hidden">
-                <div class="section-card">
-                    <div class="section-header">
-                        <div class="step-badge">Step 3</div>
-                        <h2>Column Operations</h2>
-                        <p class="helper-text">
-                            <i class="fas fa-info-circle"></i>
-                            Configure how to handle each column (rename, merge, split, or exclude)
-                        </p>
-                    </div>
-
-                    <div id="column-cards-container" class="column-cards-grid"></div>
-
-                    <div class="action-buttons">
-                        <button type="button" class="btn-secondary" id="btn-back-to-preview">
-                            <i class="fas fa-arrow-left"></i> Back
-                        </button>
-                        <button type="button" class="btn-primary" id="btn-apply-column-ops">
-                            Apply Column Operations
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Section 4: Smart Data Cleaning -->
-            <section id="section-4-cleaning" class="section-container hidden">
-                <div class="section-card">
-                    <div class="section-header">
-                        <div class="step-badge">Step 4</div>
-                        <h2>Smart Data Cleaning</h2>
-                        <p class="helper-text">
-                            <i class="fas fa-info-circle"></i>
-                            Select cleaning operations to apply to your data
-                        </p>
-                    </div>
-
-                    <div class="cleaning-options-grid">
-
-                        <!-- Basic Cleaning -->
-                        <div class="cleaning-card">
-                            <div class="cleaning-icon">
-                                <i class="fas fa-broom"></i>
-                            </div>
-                            <h3>Basic Cleaning</h3>
-                            <div class="cleaning-options">
-                                <label class="checkbox-option">
-                                    <input type="checkbox" id="clean-empty-rows" checked>
-                                    <span>Remove empty rows</span>
+                    <div class="advanced-content hidden" id="advanced-content">
+                        <div class="advanced-grid">
+                            <!-- Phone Format -->
+                            <div class="advanced-option">
+                                <h4><i class="fas fa-phone"></i> Phone Number Format</h4>
+                                <label class="radio-option">
+                                    <input type="radio" name="phone-format" value="10-digit">
+                                    <span>10 digits only (8090537120)</span>
                                 </label>
-                                <label class="checkbox-option">
-                                    <input type="checkbox" id="clean-trim" checked>
-                                    <span>Trim whitespace</span>
-                                </label>
-                                <label class="checkbox-option">
-                                    <input type="checkbox" id="clean-duplicates" checked>
-                                    <span>Remove duplicate rows</span>
-                                </label>
-                                <label class="checkbox-option">
-                                    <input type="checkbox" id="clean-line-breaks" checked>
-                                    <span>Fix line breaks</span>
+                                <label class="radio-option">
+                                    <input type="radio" name="phone-format" value="+91-format" checked>
+                                    <span>+91 format (+91 8090537120)</span>
                                 </label>
                             </div>
-                        </div>
 
-                        <!-- Text Normalization -->
-                        <div class="cleaning-card">
-                            <div class="cleaning-icon">
-                                <i class="fas fa-font"></i>
+                            <!-- Date Format -->
+                            <div class="advanced-option">
+                                <h4><i class="fas fa-calendar"></i> Date Format</h4>
+                                <label class="radio-option">
+                                    <input type="radio" name="date-format" value="YYYY-MM-DD" checked>
+                                    <span>YYYY-MM-DD (2024-01-16)</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="date-format" value="DD/MM/YYYY">
+                                    <span>DD/MM/YYYY (16/01/2024)</span>
+                                </label>
                             </div>
-                            <h3>Text Normalization</h3>
-                            <div class="cleaning-options">
+
+                            <!-- Column Operations -->
+                            <div class="advanced-option">
+                                <h4><i class="fas fa-columns"></i> Column Operations</h4>
                                 <label class="checkbox-option">
-                                    <input type="checkbox" id="clean-special-chars" checked>
-                                    <span>Remove special characters</span>
+                                    <input type="checkbox" id="remove-empty-cols" checked>
+                                    <span>Remove empty columns</span>
                                 </label>
                                 <label class="checkbox-option">
-                                    <input type="checkbox" id="clean-normalize-case" checked>
-                                    <span>Normalize case (Title Case)</span>
+                                    <input type="checkbox" id="split-name">
+                                    <span>Split Name → First/Last</span>
+                                </label>
+                            </div>
+
+                            <!-- Text Cleaning -->
+                            <div class="advanced-option">
+                                <h4><i class="fas fa-font"></i> Text Cleaning</h4>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" id="normalize-yesno">
+                                    <span>Normalize Yes/No fields</span>
                                 </label>
                                 <label class="checkbox-option">
-                                    <input type="checkbox" id="clean-fix-encoding" checked>
-                                    <span>Fix encoding issues</span>
-                                </label>
-                                <label class="checkbox-option">
-                                    <input type="checkbox" id="clean-remove-emojis">
+                                    <input type="checkbox" id="remove-emojis">
                                     <span>Remove emojis</span>
                                 </label>
                             </div>
                         </div>
-
-                        <!-- Smart Formatting -->
-                        <div class="cleaning-card">
-                            <div class="cleaning-icon">
-                                <i class="fas fa-magic"></i>
-                            </div>
-                            <h3>Smart Field Formatting</h3>
-                            <div class="cleaning-options">
-                                <label class="checkbox-option">
-                                    <input type="checkbox" id="clean-format-phone" checked>
-                                    <span>Format mobile numbers (+91)</span>
-                                </label>
-                                <label class="checkbox-option">
-                                    <input type="checkbox" id="clean-validate-email" checked>
-                                    <span>Validate email addresses</span>
-                                </label>
-                                <label class="checkbox-option">
-                                    <input type="checkbox" id="clean-normalize-currency" checked>
-                                    <span>Normalize currency values</span>
-                                </label>
-                                <label class="checkbox-option">
-                                    <input type="checkbox" id="clean-standardize-dates" checked>
-                                    <span>Standardize dates (YYYY-MM-DD)</span>
-                                </label>
-                            </div>
-                        </div>
-
                     </div>
+                </div>
 
-                    <div class="action-buttons">
-                        <button type="button" class="btn-secondary" id="btn-back-to-columns">
-                            <i class="fas fa-arrow-left"></i> Back
-                        </button>
-                        <button type="button" class="btn-primary" id="btn-run-cleaning">
-                            <i class="fas fa-cogs"></i> Run Cleaning Engine
-                        </button>
-                    </div>
+                <!-- Run Auto Clean Button -->
+                <div class="action-row">
+                    <button type="button" class="btn btn-secondary" id="btn-back-to-upload">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+                    <button type="button" class="btn btn-primary btn-large" id="btn-run-clean">
+                        <i class="fas fa-magic"></i> Run Auto Clean
+                    </button>
                 </div>
             </section>
 
-            <!-- Mid-Page Ad -->
-            <div class="ad-container mid">
-                <div class="ad-slot ad-728x90"></div>
-            </div>
+            <!-- SECTION 3: Preview & Export -->
+            <section id="result-section" class="section-card hidden">
+                <div class="section-header">
+                    <h2><i class="fas fa-check-circle"></i> Cleaned Data Preview & Export</h2>
+                    <p class="section-subtitle">Review cleaned data and download</p>
+                </div>
 
-            <!-- Section 5: Validation & Safety -->
-            <section id="section-5-validation" class="section-container hidden">
-                <div class="section-card">
-                    <div class="section-header">
-                        <div class="step-badge">Step 5</div>
-                        <h2>Data Validation & Safety</h2>
-                        <p class="helper-text">
-                            <i class="fas fa-info-circle"></i>
-                            Review validation results and handle invalid data
-                        </p>
-                    </div>
+                <!-- Cleaning Summary Stats -->
+                <div class="stats-container" id="stats-container">
+                    <!-- Stats will be injected here -->
+                </div>
 
-                    <div id="validation-stats" class="validation-stats-grid"></div>
+                <!-- Preview Table -->
+                <div class="preview-container">
+                    <h3><i class="fas fa-eye"></i> Cleaned Data (First 20 rows)</h3>
+                    <div id="preview-table-container" class="table-wrapper"></div>
+                </div>
 
-                    <div id="invalid-rows-section" class="invalid-rows-section hidden">
-                        <h3>Invalid Rows Detected:</h3>
-                        <div id="invalid-rows-table" class="table-scroll"></div>
+                <!-- Success Message -->
+                <div class="results-footer">
+                    <i class="fas fa-check-circle"></i> Data cleaned and formatted automatically.
+                </div>
 
-                        <div class="invalid-actions">
-                            <button type="button" class="btn-danger" id="btn-remove-invalid">
-                                <i class="fas fa-trash"></i> Remove Invalid Rows
-                            </button>
-                            <button type="button" class="btn-secondary" id="btn-keep-flag-invalid">
-                                <i class="fas fa-flag"></i> Keep But Flag
-                            </button>
-                            <button type="button" class="btn-secondary" id="btn-download-invalid">
-                                <i class="fas fa-download"></i> Download Invalid Only
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="action-buttons">
-                        <button type="button" class="btn-secondary" id="btn-back-to-cleaning">
-                            <i class="fas fa-arrow-left"></i> Back
+                <!-- Export Buttons -->
+                <div class="export-section">
+                    <h3>Download Cleaned File</h3>
+                    <div class="action-row">
+                        <button type="button" class="btn btn-export btn-excel" id="btn-export-excel">
+                            <i class="fas fa-file-excel"></i> Download Excel
                         </button>
-                        <button type="button" class="btn-primary" id="btn-to-final-preview">
-                            Proceed to Final Preview
-                            <i class="fas fa-arrow-right"></i>
+                        <button type="button" class="btn btn-export btn-csv" id="btn-export-csv">
+                            <i class="fas fa-file-csv"></i> Download CSV
                         </button>
                     </div>
                 </div>
-            </section>
 
-            <!-- Section 6: Final Preview & Confirmation -->
-            <section id="section-6-final-preview" class="section-container hidden">
-                <div class="section-card">
-                    <div class="section-header">
-                        <div class="step-badge">Step 6</div>
-                        <h2>Final Preview & Confirmation</h2>
-                        <p class="helper-text">
-                            <i class="fas fa-info-circle"></i>
-                            Review the cleaned data before export
-                        </p>
-                    </div>
-
-                    <div id="transformation-summary" class="transformation-summary"></div>
-
-                    <div class="preview-container">
-                        <h3>Cleaned Data Preview (First 20 rows):</h3>
-                        <div id="final-table-container" class="table-scroll"></div>
-                    </div>
-
-                    <div class="confirmation-box">
-                        <label class="checkbox-option large">
-                            <input type="checkbox" id="confirm-data">
-                            <span>I confirm the data looks correct and I'm ready to export</span>
-                        </label>
-                    </div>
-
-                    <div class="action-buttons">
-                        <button type="button" class="btn-secondary" id="btn-back-to-validation">
-                            <i class="fas fa-arrow-left"></i> Back
-                        </button>
-                        <button type="button" class="btn-primary" id="btn-proceed-to-export" disabled>
-                            Proceed to Export
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
+                <!-- Start Over -->
+                <div class="action-row">
+                    <button type="button" class="btn btn-secondary" id="btn-start-over">
+                        <i class="fas fa-redo"></i> Start Over
+                    </button>
                 </div>
             </section>
 
-            <!-- Section 7: Export -->
-            <section id="section-7-export" class="section-container hidden">
-                <div class="section-card">
-                    <div class="section-header">
-                        <div class="step-badge">Step 7</div>
-                        <h2>Export Clean Data</h2>
-                        <p class="helper-text">
-                            <i class="fas fa-info-circle"></i>
-                            Choose your preferred export format
-                        </p>
-                    </div>
-
-                    <div class="export-options-grid">
-                        <button type="button" class="btn-export btn-excel" id="btn-export-excel">
-                            <i class="fas fa-file-excel"></i>
-                            <span class="export-label">Download Excel</span>
-                            <span class="export-format">.xlsx format</span>
-                        </button>
-                        <button type="button" class="btn-export btn-csv" id="btn-export-csv">
-                            <i class="fas fa-file-csv"></i>
-                            <span class="export-label">Download CSV</span>
-                            <span class="export-format">.csv format</span>
-                        </button>
-                    </div>
-
-                    <div class="export-extras">
-                        <label class="checkbox-option">
-                            <input type="checkbox" id="export-include-report">
-                            <span>Include validation report</span>
-                        </label>
-                    </div>
-
-                    <div class="action-buttons">
-                        <button type="button" class="btn-secondary" id="btn-start-over">
-                            <i class="fas fa-redo"></i> Start Over
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-        </main>
-
-        <!-- Right Ad Sidebar -->
-        <aside class="ad-sidebar right">
-            <div class="ad-slot ad-300x600"></div>
-        </aside>
-
-    </div>
-
-    <!-- Bottom AdSense Banner -->
-    <div class="ad-container bottom">
-        <div class="ad-slot ad-728x90"></div>
-    </div>
+        </div>
+    </main>
 
     <!-- Loading Overlay -->
     <div id="loading-overlay" class="loading-overlay hidden">
@@ -464,52 +361,30 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="cosmic-footer">
-        <div class="footer-container">
-            <div class="footer-brand">
-                <div class="footer-logo">
-                    <img src="../images/logo.png" alt="EXTEROID Logo">
-                    <span>EXTEROID</span>
-                </div>
-                <p class="footer-tagline">Excel Power. Cosmic Scale.</p>
-            </div>
-            <div class="footer-links">
-                <a href="../index.html">Home</a>
-                <a href="../about.html">About</a>
-                <a href="../privacy.html">Privacy</a>
-                <a href="../contact.html">Contact</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 EXTEROID. All rights reserved.</p>
-        </div>
+    <!-- Simple Footer -->
+    <footer
+        style="text-align: center; color: rgba(255,255,255,0.4); padding-bottom: 2rem; font-size: 0.9rem; position: relative; z-index: 10;">
+        &copy; 2026 EXTEROID. Proprietary software. Reverse engineering prohibited.
     </footer>
 
     <!-- Custom JavaScript -->
     <script src="js/smartexcel.js"></script>
 
-    <!-- Audio Background -->
-    <audio id="universe-audio" loop style="display:none;">
-        <source src="../images/sound%20of%20the%20universe.mp3" type="audio/mpeg">
-    </audio>
+    <!-- DevTools Protection -->
     <script>
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && ['I', 'C', 'J'].includes(e.key)) || (e.ctrlKey && e.key === 'U')) { e.preventDefault(); return false; }
+        });
         (function () {
-            var audio = document.getElementById('universe-audio');
-            if (audio) {
-                audio.volume = 1.0;
-                var playAudio = function () {
-                    audio.play().catch(function (e) {
-                        console.log("Autoplay prevented:", e);
-                        document.addEventListener('click', function () {
-                            audio.play();
-                        }, { once: true });
-                    });
-                };
-                playAudio();
-            }
+            const threshold = 160;
+            setInterval(() => {
+                if (window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold) {
+                    document.body.innerHTML = `<div style="height:100vh;display:flex;align-items:center;justify-content:center;background:#000;color:#fff;font-family:sans-serif;text-align:center"><div><h2>⚠️ Developer Tools Detected</h2><p>This action is not allowed.</p></div></div>`;
+                }
+            }, 1000);
         })();
     </script>
+
 </body>
 
 </html>
